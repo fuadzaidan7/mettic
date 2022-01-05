@@ -1,11 +1,35 @@
+<?php
+/* Smarty version 4.0.0, created on 2022-01-05 16:51:33
+  from 'C:\Users\AwakComey\mettic\templates\tpl_home.php' */
 
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.0.0',
+  'unifunc' => 'content_61d5be857435c3_87434197',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '010cc365270d284da2f8d5bdb31f9802fd0d26f0' => 
+    array (
+      0 => 'C:\\Users\\AwakComey\\mettic\\templates\\tpl_home.php',
+      1 => 1641397891,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_61d5be857435c3_87434197 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 	<body>
 		
 		<div class="colorlib-loader"></div>
 
 		<div id="page">
 
-			{$header}
+			<?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+
 			
 			<aside id="colorlib-hero">
 				<div class="flexslider">
@@ -469,7 +493,9 @@
 						<div class="col-md-12 text-center">
 							<p>
 								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	     					<small class="block">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.  <br>This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></small>
+	     					<small class="block">Copyright &copy; <?php echo '<script'; ?>
+>document.write(new Date().getFullYear());<?php echo '</script'; ?>
+> All rights reserved.  <br>This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></small>
 	    					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							</p>
 						</div>
@@ -483,27 +509,51 @@
 		</div>
 		
 		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.min.js"><?php echo '</script'; ?>
+>
 		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.easing.1.3.js"><?php echo '</script'; ?>
+>
 		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
+		<?php echo '<script'; ?>
+ src="js/bootstrap.min.js"><?php echo '</script'; ?>
+>
 		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.waypoints.min.js"><?php echo '</script'; ?>
+>
 		<!-- Stellar Parallax -->
-		<script src="js/jquery.stellar.min.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.stellar.min.js"><?php echo '</script'; ?>
+>
 		<!-- Flexslider -->
-		<script src="js/jquery.flexslider-min.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.flexslider-min.js"><?php echo '</script'; ?>
+>
 		<!-- Owl carousel -->
-		<script src="js/owl.carousel.min.js"></script>
+		<?php echo '<script'; ?>
+ src="js/owl.carousel.min.js"><?php echo '</script'; ?>
+>
 		<!-- Magnific Popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/magnific-popup-options.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.magnific-popup.min.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/magnific-popup-options.js"><?php echo '</script'; ?>
+>
 		<!-- Counters -->
-		<script src="js/jquery.countTo.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.countTo.js"><?php echo '</script'; ?>
+>
 		<!-- Main -->
-		<script src="js/main.js"></script>
+		<?php echo '<script'; ?>
+ src="js/main.js"><?php echo '</script'; ?>
+>
 
 	</body>
 
 
+<?php }
+}

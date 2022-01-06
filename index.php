@@ -44,7 +44,7 @@ if(file_exists("modules/$module.php"))
 else{	
 	$body = $body->fetch("tpl_{$module}.php");
 }
-
+echo "test<br><br>";
 
 $smarty->assign("body", $body);	
 $smarty->display("tpl_mainlayout.php");

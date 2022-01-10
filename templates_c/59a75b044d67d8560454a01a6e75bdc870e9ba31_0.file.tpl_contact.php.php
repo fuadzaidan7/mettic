@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2021-12-23 01:38:20
+/* Smarty version 4.0.0, created on 2022-01-10 03:10:23
   from 'C:\xampp\htdocs\mettic\templates\tpl_contact.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61c3c4fc980a31_85796041',
+  'unifunc' => 'content_61db958f12a247_28764782',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '59a75b044d67d8560454a01a6e75bdc870e9ba31' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mettic\\templates\\tpl_contact.php',
-      1 => 1640219846,
+      1 => 1641780621,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61c3c4fc980a31_85796041 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61db958f12a247_28764782 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 	<body>
 		
@@ -58,16 +58,16 @@ function content_61c3c4fc980a31_85796041 (Smarty_Internal_Template $_smarty_tpl)
 							<h2>Contact Information</h2>
 							<div class="row contact-info-wrap">
 								<div class="col-md-3">
-									<p><span><i class="icon-location-2"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
+									<p><span><i class="icon-location-2"></i></span><br>Star Avenue Commercial Center,</br>18-02, Jalan Zuhal U5/178, Seksyen U5,</br>40150 Shah Alam, Selangor DE</p>
 								</div>
 								<div class="col-md-3">
-									<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+									<p><span><i class="icon-phone3"></i></span><br><a href="tel://601136051024">+6011 3605 1024</a></p>
 								</div>
 								<div class="col-md-3">
-									<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+									<p><span><i class="icon-paperplane"></i></span><br><a href="mailto:enquiry@metticsysteme.com">enquiry@metticsysteme.com</a></p>
 								</div>
 								<div class="col-md-3">
-									<p><span><i class="icon-globe"></i></span> <a href="#">yourwebsite.com</a></p>
+									<p><span><i class="icon-globe"></i></span><br><a href="#">metticsysteme.com</a></p>
 								</div>
 							</div>
 						</div>
@@ -142,76 +142,8 @@ function content_61c3c4fc980a31_85796041 (Smarty_Internal_Template $_smarty_tpl)
 					</div>
 				</div>
 			</div>
-			<footer id="colorlib-footer" role="contentinfo">
-				<div class="container">
-					<div class="row row-pb-md">
-						<div class="col-md-3 colorlib-widget">
-							<h4>About Company</h4>
-							<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-							<p>
-								<ul class="colorlib-social-icons">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-facebook"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble"></i></a></li>
-								</ul>
-							</p>
-						</div>
-						<div class="col-md-3 col-md-push-1">
-							<h4>Recent Blog</h4>
-							<ul class="colorlib-footer-links">
-								<li>
-									<span>&mdash; 20 Jan, 2017</span>
-									<a href="#">Results of Annual General Meeting</a>
-								</li>
-								<li>
-									<span>&mdash; 19 Jan, 2017</span>
-									<a href="#">Construction was awarded with “The Best Construction Company” prize</a>
-								</li>
-								<li>
-									<span>&mdash; 18 Jan, 2017</span>
-									<a href="#">New Saint Michael’s College Residence Hall Buzzing with Student Activity</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-3 col-md-push-1 colorlib-widget">
-							<h4>Information</h4>
-							<p>
-								<ul class="colorlib-footer-links">
-									<li><a href="#"><i class="icon-check"></i> Our Company</a></li>
-									<li><a href="#"><i class="icon-check"></i> Certification</a></li>
-									<li><a href="#"><i class="icon-check"></i> Our services</a></li>
-									<li><a href="#"><i class="icon-check"></i> Career</a></li>
-									<li><a href="#"><i class="icon-check"></i> Core Values</a></li>
-									<li><a href="#"><i class="icon-check"></i> Company History</a></li>
-									<li><a href="#"><i class="icon-check"></i> FAQ</a></li>
-								</ul>
-							</p>
-						</div>
+			<?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
 
-						<div class="col-md-3 col-md-push-1">
-							<h4>Contact Info</h4>
-							<ul class="colorlib-footer-links">
-								<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-								<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
-								<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
-								<li><a href="http://luxehotel.com"><i class="icon-location4"></i> yourwebsite.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<p>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	     					<small class="block">Copyright &copy; <?php echo '<script'; ?>
->document.write(new Date().getFullYear());<?php echo '</script'; ?>
-> All rights reserved.  <br>This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></small>
-	    					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</p>
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
 
 		<div class="gototop js-top">

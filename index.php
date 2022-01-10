@@ -28,11 +28,16 @@ if(!isset($module) || $module == "")
 // echo $module;
 
 $header = new Smarty;
+$header->assign("module", $module);	
 $header = $header->fetch("tpl_header.php");
+
+$footer = new Smarty;
+$footer = $footer->fetch("tpl_footer.php");
 
 $body = new Smarty;
 
 $body->assign("header", $header);	
+$body->assign("footer", $footer);	
 
 //get template file
 if(file_exists("modules/$module.php"))

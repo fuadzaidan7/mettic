@@ -4,8 +4,8 @@
 					
 						<div class="col-md-3 colorlib-widget">
 						    <p><img src="images/logo.webp"></p>
-							<h4>About Mettic</h4>
-							<p>Mettic Systeme is a company that is committed to delivering excellent engineering solutions.</p>
+							<!-- <h4>About Mettic</h4> -->
+							<!-- <p>Mettic Systeme is a company that is committed to delivering excellent engineering solutions.</p> -->
 							<p>
 								<ul class="colorlib-social-icons">
 									<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -15,45 +15,47 @@
 								</ul>
 							</p>
 						</div>
-						<div class="col-md-3 col-md-push-1">
-							<h4>Recent Blog</h4>
+						<div class="col-md-3">
+							<h4>Malaysia</h4>
 							<ul class="colorlib-footer-links">
-								<li>
-									<span>&mdash; 20 Jan, 2017</span>
-									<a href="#">Results of Annual General Meeting</a>
+								Mettic Systeme Sdn Bhd
+								<li>Lot 684, Jalan 2C, 
+									<br>Kampung Baru Subang,
+									<br>40150 Shah Alam, 
+									<br>Selangor, Malaysia.<br><br>
 								</li>
-								<li>
-									<span>&mdash; 19 Jan, 2017</span>
-									<a href="#">Construction was awarded with “The Best Construction Company” prize</a>
-								</li>
-								<li>
-									<span>&mdash; 18 Jan, 2017</span>
-									<a href="#">New Saint Michael’s College Residence Hall Buzzing with Student Activity</a>
-								</li>
+								<li><a href="tel://601136051024"><i class="icon-phone"></i>&nbsp;&nbsp;+6011 3605 1024</a></li>
+								<li><a href="mailto:enquiry@metticsysteme.com"><i class="icon-envelope"></i>enquiry@metticsysteme.com</a></li>
+								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
 							</ul>
 						</div>
-						<div class="col-md-3 col-md-push-1 colorlib-widget">
-							<h4>Information</h4>
-							<p>
-								<ul class="colorlib-footer-links">
-									<li><a href="#"><i class="icon-check"></i> Our Company</a></li>
-									<li><a href="#"><i class="icon-check"></i> Certification</a></li>
-									<li><a href="#"><i class="icon-check"></i> Our services</a></li>
-									<li><a href="#"><i class="icon-check"></i> Career</a></li>
-									<li><a href="#"><i class="icon-check"></i> Core Values</a></li>
-									<li><a href="#"><i class="icon-check"></i> Company History</a></li>
-									<li><a href="#"><i class="icon-check"></i> FAQ</a></li>
-								</ul>
-							</p>
-						</div>
-
-						<div class="col-md-3 col-md-push-1">
-							<h4>Contact Info</h4>
+						<div class="col-md-3">
+							<h4>India</h4>
 							<ul class="colorlib-footer-links">
-								<li>Star Avenue Commercial Center,</br>18-02, Jalan Zuhal U5/178, Seksyen U5,</br>40150 Shah Alam, Selangor DE</li>
-								<li><a href="tel://601136051024"><i class="icon-phone"></i>+6011 3605 1024</a></li>
+								<li>Mettic Systeme (I) Pvt Ltd
+									<br>Flat No - 403, 4th Floor, 
+									<br>Satyavijay Co - Op Hsg Society, 
+									<br>Samata Colony, Pant Nagar, 
+									<br>Ghatkopar East Mumbai 
+									<br>400075, India.
+								<li><a href="tel://601136051024"><i class="icon-phone"></i>&nbsp;&nbsp;+91 96194 03064</a></li>
 								<li><a href="mailto:enquiry@metticsysteme.com"><i class="icon-envelope"></i>enquiry@metticsysteme.com</a></li>
-								<li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li>
+								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h4>Bangladesh</h4>
+							<ul class="colorlib-footer-links">
+								<li>SKF Easy Tech Co., BD
+									<br>510, Lucky Plaza, 
+									<br>8 Agrabad C/A,
+									<br>Chattogram - 4100,
+									<br>Bangladesh.
+									<br><br>
+								</li>
+								<li><a href="tel://601136051024"><i class="icon-phone"></i>&nbsp;&nbsp;+88 01716 155266</a></li>
+								<li><a href="mailto:enquiry@metticsysteme.com"><i class="icon-envelope"></i>enquiry@metticsysteme.com</a></li>
+								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
 							</ul>
 						</div>
 					</div>

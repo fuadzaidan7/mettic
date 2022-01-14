@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2022-01-10 03:02:16
+/* Smarty version 4.0.0, created on 2022-01-11 05:45:06
   from 'C:\xampp\htdocs\mettic\templates\tpl_home.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61db93a87fc3c8_43564453',
+  'unifunc' => 'content_61dd0b52d60f06_65033575',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a249208489ab6759c3d8095a61fc6722142b312a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mettic\\templates\\tpl_home.php',
-      1 => 1641780063,
+      1 => 1641876305,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61db93a87fc3c8_43564453 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61dd0b52d60f06_65033575 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 	<body>
 		
@@ -81,8 +81,9 @@ function content_61db93a87fc3c8_43564453 (Smarty_Internal_Template $_smarty_tpl)
 			<div id="colorlib-intro">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-md-push-4 animate-box colorlib-heading animate-box">
-							<span class="sm">Welcome!</span>
+						<div class="col-md-4 col-md-push-4 col-md-offset-2 animate-box colorlib-heading animate-box">
+							<!-- <span class="sm">Welcome!</span> -->
+							<br><br>
 							<h2><span class="thin">Delivering Engineering</span> <span class="thick">Excellence</span></h2>
 						</div>
 						<div class="col-md-4 col-md-pull-4 animate-box">
@@ -92,9 +93,9 @@ function content_61db93a87fc3c8_43564453 (Smarty_Internal_Template $_smarty_tpl)
 								<span class="thin">Experience</span>
 							</div>
 						</div>
-						<div class="col-md-4 animate-box">
+						<!-- <div class="col-md-4 animate-box">
 							<p>Mettic Systeme is a company that is committed to delivering excellent engineering solutions</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

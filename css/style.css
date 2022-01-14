@@ -1094,7 +1094,7 @@ input[type="text"] {
           padding-right: 10px;
           color: #f7941e; }
         #colorlib-footer .colorlib-footer-links li a:hover {
-          text-decoration: underline; }
+          text-decoration: none; }/*underline*/
   #colorlib-footer .colorlib-social-icons li a {
     padding-left: 10px;
     padding-right: 10px; }
@@ -1479,3 +1479,43 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+/*fz edit*/
+#colorlib-services.colorlib-services-about{
+  padding: 0;
+}
+
+body{
+  text-align: justify;
+}
+
+.pb-0{
+  padding-bottom: 0px !important;
+}
+
+
+.mb-0{
+  margin-bottom: 0px;
+}
+
+.mb-2{
+  margin-bottom: 2em;
+}
+
+.section-padding{
+  padding: 7em 0;
+}
+
+.sm.letter-spacing-10
+{
+  letter-spacing: 10px
+}
+
+.colorlib-heading.inline-span h2 span
+{
+  display: inline-block;
+}
+
+.colorlib-nav ul li.has-dropdown .dropdown {
+    width: 200px;
+}

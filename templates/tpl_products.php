@@ -37,75 +37,20 @@
 					</div>
 				</div>
 				<div class="row">
+					{foreach $products as $v}
 						<div class="col-md-4 text-center animate-box">
 							<div class="staff" class="staff-img" style="background-image: url(images/coupler.jpg);">
 								<a href="#" class="desc">
-									<h3>MetTec Coupler</h3>
-									<!-- <span>Lead Engineer</span> -->
+									<h3>{$v.product_name}</h3>
+									<span>Learn more</span>
 									<div class="parag">
 										<p>The MetTec coupler by Mettic Systeme offers high quality finish, shorter lead times while staying cost effective</p>
 									</div>
 								</a>
 							</div>
 						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="staff" class="staff-img" style="background-image: url(images/lifting.jpg);">
-								<a href="#" class="desc">
-									<h3>Mettic Precast System</h3>
-									<span>Architect</span>
-									<div class="parag">
-										<p>Even the all-powerful Pointing has no control about the blind texts</p>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="staff" class="staff-img" style="background-image: url(images/post.jpg);">
-								<a href="#" class="desc">
-									<h3>Mettic Post Tensioning</h3>
-									<span>Architect</span>
-									<div class="parag">
-										<p>Even the all-powerful Pointing has no control about the blind texts</p>
-									</div>
-								</a>
-							</div>
-							</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 text-center animate-box">
-							<div class="staff" class="staff-img" style="background-image: url(images/person1.jpg);">
-								<a href="#" class="desc">
-									<h3>John Miller</h3>
-									<span>Lead Engineer</span>
-									<div class="parag">
-										<p>Even the all-powerful Pointing has no control about the blind texts</p>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="staff" class="staff-img" style="background-image: url(images/person2.jpg);">
-								<a href="#" class="desc">
-									<h3>Brian Smith</h3>
-									<span>Architect</span>
-									<div class="parag">
-										<p>Even the all-powerful Pointing has no control about the blind texts</p>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="staff" class="staff-img" style="background-image: url(images/person3.jpg);">
-								<a href="#" class="desc">
-									<h3>Andrew Clinton</h3>
-									<span>Architect</span>
-									<div class="parag">
-										<p>Even the all-powerful Pointing has no control about the blind texts</p>
-									</div>
-								</a>
-							</div>
-							</div>
-					</div>
+					{/foreach}	
+					</div>					
 				</div>
 			</div>
 

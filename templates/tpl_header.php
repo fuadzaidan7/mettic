@@ -9,7 +9,16 @@
 								<ul>
 									<li {if $module == 'home'}class="active"{/if}><a href="./index.php?module=home">Home</a></li>
 									<li {if $module == 'about'}class="active"{/if}><a href="./index.php?module=about">About</a></li>
-									<li {if $module == 'services'}class="active"{/if}><a href="./index.php?module=services">Products</a></li>
+									<li ></li>
+									<li class="has-dropdown {if $module == 'products' || $module == 'product'}active{/if}">
+									<a href="./index.php?module=products">Products</a>
+										<ul class="dropdown">
+											<!-- <li><a href="./index.php?module=product&product_id=1">Sample 1</a></li> -->
+											{foreach $products as $v}
+											<li {if $module == 'product'}class="active"{/if}><a href="./index.php?module=product&product_id={$v.product_id}">{$v.product_name}</a></li>
+											{/foreach}
+										</ul>
+									</li>
 									<li {if $module == 'contact'}class="active"{/if}><a href="./index.php?module=contact">Contact</a></li>
 									<!-- <li class="has-dropdown">
 										<a href="./index.php?module=work">Projects</a>

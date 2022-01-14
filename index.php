@@ -27,16 +27,34 @@ if(!isset($module) || $module == "")
 
 // echo $module;
 
+/*start set header*/
 $header = new Smarty;
+
+require_once("configs/db_config.php");
+
+$sql = "SELECT * FROM products ORDER BY product_id";
+$result = $mysqli -> query($sql);
+
+// Fetch all products
+$products = $result -> fetch_all(MYSQLI_ASSOC);
+
+// Free result set
+$result -> free_result();
+
+$mysqli -> close();
+
 $header->assign("module", $module);	
+$header->assign("products", $products);
+
 $header = $header->fetch("tpl_header.php");
+/*end set header*/
 
 $footer = new Smarty;
 $footer = $footer->fetch("tpl_footer.php");
 
 $body = new Smarty;
 
-$body->assign("header", $header);	
+$body->assign("header", $header);
 $body->assign("footer", $footer);	
 
 //get template file

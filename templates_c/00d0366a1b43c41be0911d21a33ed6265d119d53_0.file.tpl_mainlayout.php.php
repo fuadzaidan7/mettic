@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2021-12-23 01:58:16
+/* Smarty version 4.0.0, created on 2022-01-11 05:19:07
   from 'C:\xampp\htdocs\mettic\templates\tpl_mainlayout.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61c3c9a858b405_80237570',
+  'unifunc' => 'content_61dd053be805d0_09952520',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '00d0366a1b43c41be0911d21a33ed6265d119d53' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mettic\\templates\\tpl_mainlayout.php',
-      1 => 1640221095,
+      1 => 1641874746,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61c3c9a858b405_80237570 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61dd053be805d0_09952520 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Mettic Systeme</title>
+		<link rel="icon" href="images/ms.ico" type="image/icon type">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />

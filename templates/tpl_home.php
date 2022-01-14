@@ -57,8 +57,9 @@
 			<div id="colorlib-intro">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-md-push-4 animate-box colorlib-heading animate-box">
-							<span class="sm">Welcome!</span>
+						<div class="col-md-4 col-md-push-4 col-md-offset-2 animate-box colorlib-heading animate-box">
+							<!-- <span class="sm">Welcome!</span> -->
+							<br><br>
 							<h2><span class="thin">Delivering Engineering</span> <span class="thick">Excellence</span></h2>
 						</div>
 						<div class="col-md-4 col-md-pull-4 animate-box">
@@ -68,9 +69,9 @@
 								<span class="thin">Experience</span>
 							</div>
 						</div>
-						<div class="col-md-4 animate-box">
+						<!-- <div class="col-md-4 animate-box">
 							<p>Mettic Systeme is a company that is committed to delivering excellent engineering solutions</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

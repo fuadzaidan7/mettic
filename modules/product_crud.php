@@ -71,6 +71,11 @@ if($_POST['action'] == "AddProduct")
 	  header("Location: ./index.php?module=product_crud&message_type=2");	
 	}
 }
+elseif ($_GET['action'] == "delete") {
+		
+	
+
+}
 
 //edit product
 if(isset($_GET['product_id']))

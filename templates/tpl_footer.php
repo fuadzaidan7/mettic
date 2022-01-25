@@ -19,7 +19,7 @@
 							<h4>Malaysia</h4>
 							<ul class="colorlib-footer-links">
 								Mettic Systeme Sdn Bhd
-								<li>Lot 684, Jalan 2C, 
+								<li>Lot 684-A, Jalan 2C, 
 									<br>Kampung Baru Subang,
 									<br>40150 Shah Alam, 
 									<br>Selangor, Malaysia.<br><br>

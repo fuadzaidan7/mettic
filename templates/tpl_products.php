@@ -16,7 +16,7 @@
 				   			<div class="row">
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
-					   					<h2>What We Do?</h2>
+					   					<h2>METTIC SYSTEME</h2>
 					   					<h1>Our Products</h1>
 					   				</div>
 					   			</div>
@@ -26,6 +26,25 @@
 				  	</ul>
 			  	</div>
 			</aside>
+
+			<div id="colorlib-services" class="pb-0">
+				<div class="container">
+				<div class="row">
+					<div class="col-md-6 colorlib-heading animate-box">						
+						<p>
+							Mettic Systeme provides a wide range of construction materials and construction chemicals. The harmonized product range allows the easy selection as well as ideal combination and processing of individual construction materials.
+						</p>
+						<p>
+							Thanks to versatile fields of application such as commercial and residential buildings, bridges, power plants, marine engineering, railways, the proper function of project site can be ensured in the long run by the use of our product systems
+						</p>
+					</div>
+					<div class="col-md-5 col-md-offset-1 colorlib-heading animate-box">						
+						
+						<img class="img-responsive" src="images/img_bg_4.jpg" alt="Free HTML5 Bootstrap Template by colorlib.com">
+					</div>
+				</div>
+				</div>
+			</div>
 
 			<div id="colorlib-services">
 				<div class="container">
@@ -39,12 +58,12 @@
 				<div class="row">
 					{foreach $products as $v}
 						<div class="col-md-4 text-center animate-box">
-							<div class="staff" class="staff-img" style="background-image: url(images/coupler.jpg);">
-								<a href="#" class="desc">
+							<div class="staff" class="staff-img" style="background-image: url(images/{$v.product_image});">
+								<a href="./index.php?module=product&product_id={$v.product_id}" class="desc">
 									<h3>{$v.product_name}</h3>
-									<span>Learn more</span>
+									<span>learn more</span>
 									<div class="parag">
-										<p>The MetTec coupler by Mettic Systeme offers high quality finish, shorter lead times while staying cost effective</p>
+										<p class="text-justify">{$v.short_desc}</p>
 									</div>
 								</a>
 							</div>

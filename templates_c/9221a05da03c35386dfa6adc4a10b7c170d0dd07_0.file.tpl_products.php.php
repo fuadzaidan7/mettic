@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2022-01-14 11:00:31
+/* Smarty version 4.0.0, created on 2022-01-25 07:56:06
   from 'C:\xampp\htdocs\mettic\templates\tpl_products.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61e149bfd9bb39_13909244',
+  'unifunc' => 'content_61ef9f062a7016_17953539',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9221a05da03c35386dfa6adc4a10b7c170d0dd07' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mettic\\templates\\tpl_products.php',
-      1 => 1641987417,
+      1 => 1643093762,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61e149bfd9bb39_13909244 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61ef9f062a7016_17953539 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 	<body>
 			
@@ -40,7 +40,7 @@ function content_61e149bfd9bb39_13909244 (Smarty_Internal_Template $_smarty_tpl)
 				   			<div class="row">
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
-					   					<h2>What We Do?</h2>
+					   					<h2>METTIC SYSTEME</h2>
 					   					<h1>Our Products</h1>
 					   				</div>
 					   			</div>
@@ -50,6 +50,25 @@ function content_61e149bfd9bb39_13909244 (Smarty_Internal_Template $_smarty_tpl)
 				  	</ul>
 			  	</div>
 			</aside>
+
+			<div id="colorlib-services" class="pb-0">
+				<div class="container">
+				<div class="row">
+					<div class="col-md-6 colorlib-heading animate-box">						
+						<p>
+							Mettic Systeme provides a wide range of construction materials and construction chemicals. The harmonized product range allows the easy selection as well as ideal combination and processing of individual construction materials.
+						</p>
+						<p>
+							Thanks to versatile fields of application such as commercial and residential buildings, bridges, power plants, marine engineering, railways, the proper function of project site can be ensured in the long run by the use of our product systems
+						</p>
+					</div>
+					<div class="col-md-5 col-md-offset-1 colorlib-heading animate-box">						
+						
+						<img class="img-responsive" src="images/img_bg_4.jpg" alt="Free HTML5 Bootstrap Template by colorlib.com">
+					</div>
+				</div>
+				</div>
+			</div>
 
 			<div id="colorlib-services">
 				<div class="container">
@@ -68,13 +87,16 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 $_smarty_tpl->tpl_vars['v']->do_else = false;
 ?>
 						<div class="col-md-4 text-center animate-box">
-							<div class="staff" class="staff-img" style="background-image: url(images/coupler.jpg);">
-								<a href="#" class="desc">
+							<div class="staff" class="staff-img" style="background-image: url(images/<?php echo $_smarty_tpl->tpl_vars['v']->value['product_image'];?>
+);">
+								<a href="./index.php?module=product&product_id=<?php echo $_smarty_tpl->tpl_vars['v']->value['product_id'];?>
+" class="desc">
 									<h3><?php echo $_smarty_tpl->tpl_vars['v']->value['product_name'];?>
 </h3>
-									<span>Learn more</span>
+									<span>learn more</span>
 									<div class="parag">
-										<p>The MetTec coupler by Mettic Systeme offers high quality finish, shorter lead times while staying cost effective</p>
+										<p class="text-justify"><?php echo $_smarty_tpl->tpl_vars['v']->value['short_desc'];?>
+</p>
 									</div>
 								</a>
 							</div>

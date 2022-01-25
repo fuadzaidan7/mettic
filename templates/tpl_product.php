@@ -16,8 +16,8 @@
 			   			<div class="row">
 				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h2>Company Info</h2>
-				   					<h1>Product</h1>
+				   					<h2>METTIC SYSTEME</h2>
+				   					<h1>{$product.product_name}</h1>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -27,167 +27,148 @@
 		  	</div>
 		</aside>
 
-		<div id="colorlib-about">
-			<div class="container">
-				.<div class="row row-pb-lg">
-					<div class="col-md-6">
-						<div class="about animate-box">
-							<h2>Committed to delivering excellence</h2>
-							<p>Our mission is to be a building solutions provider, offering the best quality and fit in the market for purpose-built products, ultimately boosting efficiency and reducing the cost born by our clients.
-
-​
-
-With the headquarters in Malaysia, we have positioned ourselves as a up and coming building products player with an established and extensive network throughout Asia.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" src="images/img_bg_4.jpg" alt="Free HTML5 Bootstrap Template by colorlib.com">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box">
-						<span class="sm">Team</span>
-						<h2><span class="thin">What</span> <span class="thick">sets us apart?</span></h2>
-						
-					</div>
-				</div>
-
-
-				<div id="colorlib-services">
+		<div id="colorlib-services" class="">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-4 animate-box">
-							<div class="services">
-								<span class="icon">
-									<i class="flaticon-engineer"></i>
-								</span>
-								<div class="desc">
-									<h3>We produce high quality products</h3>
-									<p>xxx</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 animate-box">
-							<div class="services">
-								<span class="icon">
-									<i class="flaticon-engineering"></i>
-								</span>
-								<div class="desc">
-									<h3>Our production is seamlessly integrated with logistics</h3>
-									<p>xxx</p>
-									</div>
-							</div>
-						</div>
-						<div class="col-md-4 animate-box">
-							<div class="services">
-								<span class="icon">
-									<i class="flaticon-skyline"></i>
-								</span>
-								<div class="desc">
-									<h3>Our engineering support is always present</h3>
-									<p>xxx</p>
-									</div>
-							</div>
-						</div>
-						<div class="col-md-4 animate-box">
-							<div class="services">
-								<span class="icon">
-									<i class="flaticon-crane"></i>
-								</span>
-								<div class="desc">
-									<h3>We innovate, continually</h3>
-									<p>xxx</p>
-									</div>
-							</div>
-						</div>
-						<div class="col-md-4 animate-box">
-							<div class="services">
-								<span class="icon">
-									<i class="flaticon-sketch"></i>
-								</span>
-								<div class="desc">
-									<h3>We are cost effective</h3>
-									<p>xxx</p>
-									</div>
-							</div>
-						</div>
-						<div class="col-md-4 animate-box">
-							<div class="services">
-								<span class="icon">
-									<i class="flaticon-conveyor"></i>
-								</span>
-								<div class="desc">
-									<h3>Construction Management</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
-									</div>
-							</div>
-						</div>
-					</div>
+				<div class="row">
+					
+					<div class="col-md-6 colorlib-heading animate-box">						
+						<p>
+							{$product.main_desc}
+						</p>
+						<br>
+						<a class="btn-download" target="__blank" href="./brochure/{$product.brochure}">
+							<i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp;&nbsp;Download Brochure
+						</a>
+					</div>	
+					<div class="col-md-6">
+						<img class="img-responsive" src="images/{$product.product_image}" >
+					</div>				
+				</div>
 				</div>
 			</div>
-			
+
+		<div id="colorlib-about" class="colorlib-light-grey">
+			<div class="container">				
+				<div class="row row-pb-lg">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box mb-0">
+						<span class="sm">Advantages</span>	
+						<br>						
+					</div>					
+					<div class="col-md-6">
+						<img class="img-responsive" src="images/{$product.image_1}" alt="Free HTML5 Bootstrap Template by colorlib.com">
+					</div>
+					<div class="col-md-6 ">
+						
+						<div class="about animate-box">
+							<!-- <h2>Advantages</h2> -->
+							<p>{$product.content_1}</p>
+						</div>
+					</div>
+				</div>
+				{if $product.title_info_1 != ""}
+				<div class="row">
+					{for $i=1 to 3}
+					{if $product.{"title_info_$i"} != ""}
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								{if $i == 1}
+								<i class="flaticon-engineering"></i>
+								{elseif $i == 2}
+								<i class="flaticon-sketch"></i>
+								{elseif $i == 3}
+								<i class="flaticon-conveyor"></i>
+								{/if}
+							</span>
+							<div class="desc">
+								<h3>{$product.{"title_info_$i"}}</h3>
+								{$product.{"info_$i"}}													
+							</div>
+						</div>
+					</div>
+					{/if}
+					{/for}
+				</div>
+				{/if}
 			</div>
 		</div>
 
-		<div id="colorlib-testimony" class="colorlib-light-grey">
+		{if $product.application_1 != ""}
+		<div id="colorlib-about">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 animate-box colorlib-heading animate-box">
-						<span class="sm">Testimonial</span>
-						<h2><span class="thin">What Our</span> <span class="thick">Client Says</span></h2>
+					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading mb-0">
+						<span class="sm">Applications</span>						
 					</div>
-					<div class="col-md-7 col-md-push-1">
-						<div class="row animate-box">
-							<span class="icon"><i class="icon-quotes-left"></i></span>
-							<div class="owl-carousel1">
-								<div class="item">
-									<div class="testimony-slide active">
-										<div class="testimony-wrap">
-											<figure>
-												<img src="images/person1.jpg" alt="user">
-											</figure>
-											<blockquote>
-												<span>Andrew Field</span>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active">
-										<div class="testimony-wrap">
-											<figure>
-												<img src="images/person2.jpg" alt="user">
-											</figure>
-											<blockquote>
-												<span>Mark Bubble</span>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active">
-										<div class="testimony-wrap">
-											<figure>
-												<img src="images/person3.jpg" alt="user">
-											</figure>
-											<blockquote>
-												<span>Adam Smith</span>
-												<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2 animate-box">
+						<div class="services">								
+							{$product.application_1}
 						</div>
+					</div>		
+					<div class="col-md-4 animate-box">
+						<div class="services">								
+							{$product.application_2}
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		{/if}
+
+		{if $product.product_line_1 != ""}	
+		<div id="colorlib-about" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading mb-0">
+						<span class="sm">Product Line</span>						
 					</div>
+				</div>
+				
+				<div class="row">
+					{for $i=1 to 3}
+					{if $product.{"product_line_$i"} != ""}
+					<div class="col-md-4 {if $i == 1 && $product.product_line_3 == ''}col-md-offset-2{/if} animate-box">
+						<div class="services">								
+							{$product.{"product_line_$i"}}							
+						</div>
+					</div>							
+					{/if}
+					{/for}
+				</div>
+			</div>
+		</div>
+		{/if}
+
+		<div id="colorlib-testimony" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-justify animate-box ">
+						<!-- <span class="sm">Certification</span> -->
+						<h2>Certification</h2>
+						<p>
+							{$product.certification_desc}
+						</p>
+					</div>		
+					<div class="col-md-5 col-md-offset-1 text-justify animate-box ">
+						<!-- <span class="sm">Certification</span> -->
+						<h2>&nbsp;</h2>
+						<p>
+							{$product.download_desc}
+						</p>
+						<br>
+						<a class="btn-download" target="__blank" href="./brochure/{$product.brochure}">
+							<i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp;&nbsp;Download Brochure
+						</a>
+					</div>				
 				</div>
 			</div>
 		</div>
 
 	
-		<div id="colorlib-subscribe">
+		<!-- <div id="colorlib-subscribe">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -213,7 +194,8 @@ With the headquarters in Malaysia, we have positioned ourselves as a up and comi
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
+
 		{$footer}
 	</div>
 

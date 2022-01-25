@@ -3,12 +3,12 @@
 require 'vendor/autoload.php';
 $smarty = new Smarty();
 
-$debug = 0; //tukar jadi 1 kalau nk tgk error
+$debug = 1; //tukar jadi 1 kalau nk tgk error
 
 //error display setting
 if($debug == 1)
 {
-	ini_set(display_errors,$debug);
+	ini_set('display_errors',$debug);
 	error_reporting(E_ALL ^ E_NOTICE);	
 }
 else
@@ -41,7 +41,7 @@ $products = $result -> fetch_all(MYSQLI_ASSOC);
 // Free result set
 $result -> free_result();
 
-$mysqli -> close();
+// $mysqli -> close();
 
 $header->assign("module", $module);	
 $header->assign("products", $products);

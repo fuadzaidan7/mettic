@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2022-01-10 12:22:08
+/* Smarty version 4.0.0, created on 2022-01-25 07:51:35
   from 'C:\xampp\htdocs\mettic\templates\tpl_footer.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61dc16e0c22c88_92983572',
+  'unifunc' => 'content_61ef9df73cae83_35216200',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a60934471915507e08c6a5a905ec1bef9454c65c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mettic\\templates\\tpl_footer.php',
-      1 => 1641813727,
+      1 => 1643093494,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61dc16e0c22c88_92983572 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61ef9df73cae83_35216200 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer id="colorlib-footer" role="contentinfo">
 				<div class="container">
 					<div class="row row-pb-md">
@@ -42,7 +42,7 @@ function content_61dc16e0c22c88_92983572 (Smarty_Internal_Template $_smarty_tpl)
 							<h4>Malaysia</h4>
 							<ul class="colorlib-footer-links">
 								Mettic Systeme Sdn Bhd
-								<li>Lot 684, Jalan 2C, 
+								<li>Lot 684-A, Jalan 2C, 
 									<br>Kampung Baru Subang,
 									<br>40150 Shah Alam, 
 									<br>Selangor, Malaysia.<br><br>

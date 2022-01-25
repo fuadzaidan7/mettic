@@ -24,6 +24,9 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
 		
+		<!-- font awesome -->
+		<link href="./plugin/fontawesome-5.15.4/css/all.css" rel="stylesheet">
+
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="css/animate.css">
 		<!-- Icomoon Icon Fonts-->

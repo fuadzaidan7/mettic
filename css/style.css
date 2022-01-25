@@ -1322,7 +1322,8 @@ input[type="text"] {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 8px 20px; }
+  padding: 8px 20px;   
+}
   .btn.btn-md {
     padding: 8px 20px !important; }
   .btn.btn-lg {
@@ -1337,8 +1338,8 @@ input[type="text"] {
   color: #fff;
   border: 2px solid #f7941e; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #ffd21a !important;
-    border-color: #ffd21a !important; }
+    background: #ffb205 !important;
+    border-color: #ffb205 !important; }
   .btn-primary.btn-outline {
     background: transparent;
     color: #f7941e;
@@ -1518,4 +1519,52 @@ body{
 
 .colorlib-nav ul li.has-dropdown .dropdown {
     width: 200px;
+}
+
+.btn-download, .btn-download:active, .btn-download:focus{
+  padding: 17px;
+  background: #f7941e;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-download:hover{ 
+  /*color: #000000;*/
+  color: #fff;
+  /*font-weight: bold;*/
+  background: #ffb205;
+}
+
+.colorlib-heading .sm {
+  color: #000000;
+  }
+
+  .services .desc {
+    padding-left: 0px;
+}
+
+.services .desc h3{
+    padding-left: 75px;
+    padding-bottom: 15px;
+}
+
+.services .icon{
+  top: -15px;
+}
+
+.img-responsive{
+  border-radius: 5px;
+}
+
+.btn{
+  border-radius: 5px;
+}
+
+.crud-image{
+  border-radius: 5px;
+  /*max-width: 200px;*/
+}
+
+span.required{
+  color: red;
 }

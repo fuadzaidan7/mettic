@@ -20,6 +20,7 @@
 										</ul>
 									</li>
 									<li {if $module == 'contact'}class="active"{/if}><a href="./index.php?module=contact">Contact</a></li>
+									<li {if $module == 'login'}class="active"{/if}><a href="./index.php?module=login">Login</a></li>
 									<!-- <li class="has-dropdown">
 										<a href="./index.php?module=work">Projects</a>
 										<ul class="dropdown">

@@ -59,7 +59,7 @@ if($_POST['action'] == "AddProduct")
 		}
 	}
 
-	$query = "INSERT INTO products SET ".$column_data;
+	$query = "INSERT INTO products SET ".$column_data.", created_by = ".$_SESSION['user_details']['user_id'];
 
 	// echo $query;
 
@@ -70,6 +70,10 @@ if($_POST['action'] == "AddProduct")
 	} else {
 	  header("Location: ./index.php?module=product_crud&message_type=2");	
 	}
+}
+if($_POST['action'] == "EditProduct")
+{
+
 }
 elseif ($_GET['action'] == "delete") {
 		

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2022-01-25 08:12:53
+/* Smarty version 4.0.0, created on 2022-01-26 08:01:51
   from 'C:\xampp\htdocs\mettic\templates\tpl_product_crud.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61efa2f50231c1_44382583',
+  'unifunc' => 'content_61f0f1df04d227_17601120',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ecbf9212ea12f86ccea75d6b09957f7daf6a599d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mettic\\templates\\tpl_product_crud.php',
-      1 => 1643094770,
+      1 => 1643180510,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61efa2f50231c1_44382583 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61f0f1df04d227_17601120 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <body>
 		
@@ -62,10 +62,13 @@ function content_61efa2f50231c1_44382583 (Smarty_Internal_Template $_smarty_tpl)
 				<?php }?>
 
 				<div class="row">
+					<a class="btn btn-danger pull-right" href="./index.php?module=logout">
+					    Logout
+					</a>
 					<?php if (empty($_smarty_tpl->tpl_vars['product']->value)) {?>
 					<button class="btn btn-primary pull-right" type="button" data-toggle="collapse" data-target="#formAdd" aria-expanded="false" aria-controls="formAdd">
 					    Add Product
-					</button>
+					</button>					
 					<?php } else { ?>
 						<a class="btn btn-primary pull-right" href="./index.php?module=product_crud&open=1">Add Product</a>
 					<?php }?>
@@ -273,7 +276,7 @@ echo $_smarty_tpl->tpl_vars['product']->value['product_id'];
 						</div>
 
 					  	
-						  <button type="submit" class="btn btn-primary">Submit</button>
+						  <button type="submit" class="btn btn-success">Submit</button>
 					</form>		
 				</div>
 				</div>

@@ -39,10 +39,13 @@
 				{/if}
 
 				<div class="row">
+					<a class="btn btn-danger pull-right" href="./index.php?module=logout">
+					    Logout
+					</a>
 					{if empty($product)}
 					<button class="btn btn-primary pull-right" type="button" data-toggle="collapse" data-target="#formAdd" aria-expanded="false" aria-controls="formAdd">
 					    Add Product
-					</button>
+					</button>					
 					{else}
 						<a class="btn btn-primary pull-right" href="./index.php?module=product_crud&open=1">Add Product</a>
 					{/if}
@@ -213,7 +216,7 @@
 						</div>
 
 					  	
-						  <button type="submit" class="btn btn-primary">Submit</button>
+						  <button type="submit" class="btn btn-success">Submit</button>
 					</form>		
 				</div>
 				</div>

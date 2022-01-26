@@ -19,10 +19,14 @@ else
 
 $module = $_GET['module'];
 
+session_start();
+
 //set default module
 if(!isset($module) || $module == "")
 {
 	$module = "home";
+}elseif ($module == "product_crud" && (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true)) {
+	header("Location: ./index.php?module=login");
 }
 
 // echo $module;

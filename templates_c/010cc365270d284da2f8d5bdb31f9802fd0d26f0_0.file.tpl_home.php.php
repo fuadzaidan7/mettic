@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2022-01-05 16:51:33
+/* Smarty version 4.0.0, created on 2022-01-27 17:14:16
   from 'C:\Users\AwakComey\mettic\templates\tpl_home.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61d5be857435c3_87434197',
+  'unifunc' => 'content_61f2c4d89e18e8_28619134',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '010cc365270d284da2f8d5bdb31f9802fd0d26f0' => 
     array (
       0 => 'C:\\Users\\AwakComey\\mettic\\templates\\tpl_home.php',
-      1 => 1641397891,
+      1 => 1643300052,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61d5be857435c3_87434197 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61f2c4d89e18e8_28619134 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 	<body>
 		
@@ -41,7 +41,7 @@ function content_61d5be857435c3_87434197 (Smarty_Internal_Template $_smarty_tpl)
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
 					   					<h2>Providing all Kinds of Construction Services</h2>
-					   					<h1>Constructing Spaces For You</h1>
+					   					<h1>SAFETY, QUALITY, ETHICS & SUSTAINABILITY</h1>
 					   				</div>
 					   			</div>
 					   		</div>
@@ -54,7 +54,7 @@ function content_61d5be857435c3_87434197 (Smarty_Internal_Template $_smarty_tpl)
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
 					   					<h2>Building Your Solid</h2>
-					   					<h1>High Class Building</h1>
+					   					<h1>TOWARD BUILDING TOMORROW</h1>
 					   				</div>
 					   			</div>
 					   		</div>
@@ -67,7 +67,7 @@ function content_61d5be857435c3_87434197 (Smarty_Internal_Template $_smarty_tpl)
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
 					   					<h2>We Design All Kinds of Buildings</h2>
-					   					<h1>We Build Buildings Professionally</h1>
+					   					<h1>WE ARE THE PROFESSIONAL CHOICES FOR CONTRACTORS</h1>
 					   				</div>
 					   			</div>
 					   		</div>

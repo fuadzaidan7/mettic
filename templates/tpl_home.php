@@ -17,7 +17,7 @@
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
 					   					<h2>Providing all Kinds of Construction Services</h2>
-					   					<h1>Constructing Spaces For You</h1>
+					   					<h1>SAFETY, QUALITY, ETHICS & SUSTAINABILITY</h1>
 					   				</div>
 					   			</div>
 					   		</div>
@@ -30,7 +30,7 @@
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
 					   					<h2>Building Your Solid</h2>
-					   					<h1>High Class Building</h1>
+					   					<h1>TOWARD BUILDING TOMORROW</h1>
 					   				</div>
 					   			</div>
 					   		</div>
@@ -43,7 +43,7 @@
 					   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 					   				<div class="slider-text-inner text-center">
 					   					<h2>We Design All Kinds of Buildings</h2>
-					   					<h1>We Build Buildings Professionally</h1>
+					   					<h1>WE ARE THE PROFESSIONAL CHOICES FOR CONTRACTORS</h1>
 					   				</div>
 					   			</div>
 					   		</div>

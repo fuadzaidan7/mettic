@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.0, created on 2021-12-23 01:30:07
+/* Smarty version 4.0.0, created on 2022-01-11 05:45:06
   from 'C:\xampp\htdocs\mettic\templates\tpl_home.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.0',
-  'unifunc' => 'content_61c3c30fe4a080_29533827',
+  'unifunc' => 'content_61dd0b52d60f06_65033575',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a249208489ab6759c3d8095a61fc6722142b312a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\mettic\\templates\\tpl_home.php',
-      1 => 1640219406,
+      1 => 1641876305,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_61c3c30fe4a080_29533827 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61dd0b52d60f06_65033575 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 	<body>
 		
@@ -81,9 +81,10 @@ function content_61c3c30fe4a080_29533827 (Smarty_Internal_Template $_smarty_tpl)
 			<div id="colorlib-intro">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-md-push-4 animate-box colorlib-heading animate-box">
-							<span class="sm">Welcome!</span>
-							<h2><span class="thin">Secrets of Success</span> <span class="thick">of Our Projects</span></h2>
+						<div class="col-md-4 col-md-push-4 col-md-offset-2 animate-box colorlib-heading animate-box">
+							<!-- <span class="sm">Welcome!</span> -->
+							<br><br>
+							<h2><span class="thin">Delivering Engineering</span> <span class="thick">Excellence</span></h2>
 						</div>
 						<div class="col-md-4 col-md-pull-4 animate-box">
 							<div class="box text-center">
@@ -92,9 +93,9 @@ function content_61c3c30fe4a080_29533827 (Smarty_Internal_Template $_smarty_tpl)
 								<span class="thin">Experience</span>
 							</div>
 						</div>
-						<div class="col-md-4 animate-box">
-							<p>Since 1980 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-						</div>
+						<!-- <div class="col-md-4 animate-box">
+							<p>Mettic Systeme is a company that is committed to delivering excellent engineering solutions</p>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -432,76 +433,8 @@ function content_61c3c30fe4a080_29533827 (Smarty_Internal_Template $_smarty_tpl)
 					</div>
 				</div>
 			</div>
-			<footer id="colorlib-footer" role="contentinfo">
-				<div class="container">
-					<div class="row row-pb-md">
-						<div class="col-md-3 colorlib-widget">
-							<h4>About Company</h4>
-							<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-							<p>
-								<ul class="colorlib-social-icons">
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-facebook"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble"></i></a></li>
-								</ul>
-							</p>
-						</div>
-						<div class="col-md-3 col-md-push-1">
-							<h4>Recent Blog</h4>
-							<ul class="colorlib-footer-links">
-								<li>
-									<span>&mdash; 20 Jan, 2017</span>
-									<a href="#">Results of Annual General Meeting</a>
-								</li>
-								<li>
-									<span>&mdash; 19 Jan, 2017</span>
-									<a href="#">Construction was awarded with “The Best Construction Company” prize</a>
-								</li>
-								<li>
-									<span>&mdash; 18 Jan, 2017</span>
-									<a href="#">New Saint Michael’s College Residence Hall Buzzing with Student Activity</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-3 col-md-push-1 colorlib-widget">
-							<h4>Information</h4>
-							<p>
-								<ul class="colorlib-footer-links">
-									<li><a href="#"><i class="icon-check"></i> Our Company</a></li>
-									<li><a href="#"><i class="icon-check"></i> Certification</a></li>
-									<li><a href="#"><i class="icon-check"></i> Our services</a></li>
-									<li><a href="#"><i class="icon-check"></i> Career</a></li>
-									<li><a href="#"><i class="icon-check"></i> Core Values</a></li>
-									<li><a href="#"><i class="icon-check"></i> Company History</a></li>
-									<li><a href="#"><i class="icon-check"></i> FAQ</a></li>
-								</ul>
-							</p>
-						</div>
+			<?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
 
-						<div class="col-md-3 col-md-push-1">
-							<h4>Contact Info</h4>
-							<ul class="colorlib-footer-links">
-								<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-								<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
-								<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
-								<li><a href="http://luxehotel.com"><i class="icon-location4"></i> yourwebsite.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<p>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	     					<small class="block">Copyright &copy; <?php echo '<script'; ?>
->document.write(new Date().getFullYear());<?php echo '</script'; ?>
-> All rights reserved.  <br>This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></small>
-	    					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</p>
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
 
 		<div class="gototop js-top">

@@ -34,7 +34,7 @@
 							<h2>Contact Information</h2>
 							<div class="row contact-info-wrap">
 								<div class="col-md-3">
-									<p><span><i class="icon-location-2"></i></span><br>Star Avenue Commercial Center,</br>18-02, Jalan Zuhal U5/178, Seksyen U5,</br>40150 Shah Alam, Selangor DE</p>
+									<p><span><i class="icon-location-2"></i></span><br>LOT 684-A, JALAN 2C</br>KAMPUNG BARU SUBANG</br> 40150 SHAH ALAM</br>SELANGOR, MALAYSIA</p>
 								</div>
 								<div class="col-md-3">
 									<p><span><i class="icon-phone3"></i></span><br><a href="tel://601136051024">+6011 3605 1024</a></p>

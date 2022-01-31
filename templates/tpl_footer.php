@@ -14,49 +14,21 @@
 									<li><a href="#"><i class="icon-dribbble"></i></a></li>
 								</ul>
 							</p>
+							
 						</div>
 						<div class="col-md-3">
 							<h4>Malaysia</h4>
 							<ul class="colorlib-footer-links">
 								Mettic Systeme Sdn Bhd
-								<li>Lot 684-A, Jalan 2C, 
-									<br>Kampung Baru Subang,
-									<br>40150 Shah Alam, 
-									<br>Selangor, Malaysia.<br><br>
+								<li> LOT 684-A, JALAN 2C</br>KAMPUNG BARU SUBANG</br>40150 SHAH ALAM</br>SELANGOR, MALAYSIA
 								</li>
 								<li><a href="tel://601136051024"><i class="icon-phone"></i>&nbsp;&nbsp;+6011 3605 1024</a></li>
 								<li><a href="mailto:enquiry@metticsysteme.com"><i class="icon-envelope"></i>enquiry@metticsysteme.com</a></li>
 								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
 							</ul>
-						</div>
+						</div>		
 						<div class="col-md-3">
-							<h4>India</h4>
-							<ul class="colorlib-footer-links">
-								<li>Mettic Systeme (I) Pvt Ltd
-									<br>Flat No - 403, 4th Floor, 
-									<br>Satyavijay Co - Op Hsg Society, 
-									<br>Samata Colony, Pant Nagar, 
-									<br>Ghatkopar East Mumbai 
-									<br>400075, India.
-								<li><a href="tel://601136051024"><i class="icon-phone"></i>&nbsp;&nbsp;+91 96194 03064</a></li>
-								<li><a href="mailto:enquiry@metticsysteme.com"><i class="icon-envelope"></i>enquiry@metticsysteme.com</a></li>
-								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
-							</ul>
-						</div>
-						<div class="col-md-3">
-							<h4>Bangladesh</h4>
-							<ul class="colorlib-footer-links">
-								<li>SKF Easy Tech Co., BD
-									<br>510, Lucky Plaza, 
-									<br>8 Agrabad C/A,
-									<br>Chattogram - 4100,
-									<br>Bangladesh.
-									<br><br>
-								</li>
-								<li><a href="tel://601136051024"><i class="icon-phone"></i>&nbsp;&nbsp;+88 01716 155266</a></li>
-								<li><a href="mailto:enquiry@metticsysteme.com"><i class="icon-envelope"></i>enquiry@metticsysteme.com</a></li>
-								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
-							</ul>
+						<p><img src="images/mettic-iso.png" style="width: 90%;"></p>
 						</div>
 					</div>
 					<div class="row">

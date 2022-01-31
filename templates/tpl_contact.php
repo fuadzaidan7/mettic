@@ -33,16 +33,16 @@
 						<div class="col-md-10 col-md-offset-1 animate-box">
 							<h2>Contact Information</h2>
 							<div class="row contact-info-wrap">
-								<div class="col-md-3">
-									<p><span><i class="icon-location-2"></i></span><br>LOT 684-A, JALAN 2C</br>KAMPUNG BARU SUBANG</br> 40150 SHAH ALAM</br>SELANGOR, MALAYSIA</p>
+								<div class="col-md-6">
+									<p><span><i class="icon-location-2"></i></span>LOT 684-A, JALAN 2C KAMPUNG BARU SUBANG 40150 SHAH ALAM SELANGOR MALAYSIA</p>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-6">
 									<p><span><i class="icon-phone3"></i></span><br><a href="tel://601136051024">+6011 3605 1024</a></p>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-6">
 									<p><span><i class="icon-paperplane"></i></span><br><a href="mailto:enquiry@metticsysteme.com">enquiry@metticsysteme.com</a></p>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-6">
 									<p><span><i class="icon-globe"></i></span><br><a href="#">metticsysteme.com</a></p>
 								</div>
 							</div>
@@ -90,34 +90,9 @@
 					</div>
 				</div>
 			</div>
-			<div id="map" class="colorlib-map"></div>
-			<div id="colorlib-subscribe">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-md-offset-0 colorlib-heading animate-box">
-							<h2>Sign up for a Newsletter</h2>
-							<div class="row">
-								<div class="col-md-7">
-									<p>Enter your email address to get the latest news, events and special offers delivered right to your inbox.</p>
-								</div>
-								<div class="col-md-5">
-									<form class="form-inline qbstp-header-subscribe">
-										<div class="row">
-											<div class="col-md-12 col-md-offset-0">
-												<div class="form-group">
-													<input type="text" class="form-control" id="email" placeholder="Enter your email">
-													<button type="submit" class="btn btn-primary">Subscribe</button>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div id="map" class="colorlib-map" ></div>
+			
+	
 			{$footer}
 		</div>
 

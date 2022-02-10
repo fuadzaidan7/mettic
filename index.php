@@ -30,6 +30,7 @@ if(!isset($module) || $module == "")
 }
 elseif ($module == "login" && (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true)) {
 	header("Location: ./index.php?module=product_crud");
+	//
 }
 
 // echo $module;

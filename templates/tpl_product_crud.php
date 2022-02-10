@@ -17,7 +17,7 @@
 				{if $message_type == 1}
 				<div class="alert alert-success  fade in" role="alert">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-				  Adding new product succesful.
+				  Adding new product successful.
 				</div>
 				{elseif $message_type == 2}
 				<div class="alert alert-danger" role="alert">
@@ -27,12 +27,22 @@
 				{elseif $message_type == 3}
 				<div class="alert alert-success" role="alert">
 						<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-				  Editing existing product succesful.
+				  Editing existing product successful.
 				</div>
 				{elseif $message_type == 4}
 				<div class="alert alert-danger" role="alert">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 				  Error editing product.
+				</div>
+				{elseif $message_type == 5}
+				<div class="alert alert-success" role="alert">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				  Delete product successful.
+				</div>
+				{elseif $message_type == 6}
+				<div class="alert alert-danger" role="alert">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				  Error deleting product.
 				</div>
 				{/if}
 				</div>
@@ -103,7 +113,7 @@
 						    <label for="">Product Image <span class="required">*</span></label>	
 						    <div class="row">						    	  
 							    <div class="col-md-3 ">							    	
-									<input class="form-control" type="file" name="product_image" required>
+									<input class="form-control" type="file" name="product_image" value="{if $product.product_image != ''}{$product.product_image}{/if}" {if $product.product_image == ''}required{/if}>
 									{if $product.product_image != ""}
 									<br>
 									<img class="crud-image img-responsive" src="./images/{$product.product_image}">
@@ -126,7 +136,7 @@
 						    <label for="">Brochure <span class="required">*</span></label>	
 						    <div class="row">	
 							    <div class="col-md-3 text-center">
-							    	<input class="form-control" type="file" name="brochure" required>
+							    	<input class="form-control" type="file" name="brochure" value="{if $product.brochure != ''}{$product.brochure}{/if}" {if $product.product_image == ''}required{/if}>
 							    	{if $product.brochure != ""}
 							    	<br>
 									<a href="./brochure/{$product.brochure}" target="__blank" style="margin: 0 auto;"><i class="far fa-file-pdf fa-3x" aria-hidden="true"></i> <br></a>
@@ -142,7 +152,7 @@
 								  	<textarea class="form-control advantages-editor" name="content_1" placeholder="#advantages content">{$product.content_1}</textarea>									  					    	
 							    </div>   							
 							    <div class="col-md-3 ">							    	
-									<input class="form-control" type="file" name="image_1" required>
+									<input class="form-control" type="file" name="image_1" value="{if $product.image_1 != ''}{$product.image_1}{/if}" {if $product.image_1 == ''}required{/if}>
 									{if $product.image_1 != ""}
 									<br>
 									<img class="crud-image img-responsive" src="./images/{$product.image_1}">
@@ -256,7 +266,10 @@
 	<!-- <script src="./plugin/ckeditor5-build-inline/ckeditor.js"></script> -->
 
 	<script type="text/javascript">
-		
+		//hide alert
+		setTimeout(function () {
+		    $('.alert').fadeOut();
+        }, 3000);
 
         ClassicEditor
         .create( document.querySelector( '.main-desc-editor' ) )

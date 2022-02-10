@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("metticsysteme.com","mettics1","Mettic!@#45","mettics1_1");
+$mysqli = new mysqli("localhost","root","","mettic");
 
 // Check connection
 if ($mysqli -> connect_errno) {

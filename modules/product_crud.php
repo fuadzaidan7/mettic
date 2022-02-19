@@ -4,7 +4,7 @@
 
 if($_POST['action'] == "AddProduct")
 {
-	// echo "<pre>"; print_r($_POST); echo "</pre>";
+	echo "<pre>"; print_r($_POST); echo "</pre>"; exit();	
 
 	// echo "<pre>"; print_r($_FILES); echo "</pre>";
 
@@ -172,7 +172,7 @@ if(isset($_GET['product_id']))
 }
 else{	
 
-	$body->assign("open", $_GET['open']);
+	$body->assign("open", 1);//$_GET['open']
 	$body->assign("message_type", $_GET['message_type']);
 }
 

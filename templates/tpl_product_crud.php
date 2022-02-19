@@ -86,147 +86,211 @@
 					<hr>
 					<br>
 										<h3>{if empty($product)}Add{else}Edit{/if} Product</h3>
-					<form action="./index.php?module=product_crud" method="POST" enctype="multipart/form-data">
+					<form action="./index.php?module=product_crud" method="POST" enctype="multipart/form-data" id="productForm">
 						<input type="hidden" name="action" value="{if empty($product)}AddProduct{else}EditProduct{/if}">
 						<input type="hidden" name="product_id" value="{if !empty($product)}{$product.product_id}{/if}">
 
-						<div class="form-group">
-						    <label for="">Product Name <span class="required">*</span></label>		
-						    <div class="row">						    	  
-							    <div class="col-md-8 ">				    					    
-								    <input class="form-control" name="product_name" value="{$product.product_name}" placeholder="#product name" maxlength="50" required autocomplete="off">
-								    <small id="" class="form-text text-muted">50 maximum characters</small>
+						<div id="page" style="border : 1px solid #cecece; padding: 10px; border-radius: 5px;">							
+
+							<aside id="colorlib-hero">
+								<div class="flexslider">
+									<ul class="slides">
+								   	<li style="background-image: url(images/img_bg_1.jpg);">
+								   		<div class="overlay"></div>
+								   		<div class="container-fluid">
+								   			<div class="row">
+									   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
+									   				<div class="slider-text-inner text-center">
+									   					<h2>METTIC SYSTEME</h2>
+									   					<div id="product_name_editor" style="text-align: center;">
+									   						<h1>#product_name</h1>
+									   					</div>									   					
+									   				</div>
+									   			</div>
+									   		</div>
+								   		</div>
+								   	</li>
+								  	</ul>
+							  	</div>
+							</aside>
+
+							<div id="colorlib-services" class="">
+									<div class="container">
+									<div class="row">
+										
+										<div class="col-md-6 colorlib-heading animate-box">	
+											<div class="others-editor" id="main_description" style="min-height: 150px">					
+												<p>
+													#main_description
+												</p>
+											</div>
+											<br>
+											<a class="btn-download" href="javascript:void(0)">
+												<i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp;&nbsp;Download Brochure
+											</a>
+											<br>
+											<div id="brochure">	
+												<br>
+												Brochure:
+												{if $product.brochure != ""}									
+												<p class="">{$product.brochure}</p>
+												{/if}
+												<input class="" type="file" name="brochure" value="{if $product.brochure != ''}{$product.brochure}{/if}" {if $product.brochure == ''}required{/if}>
+											</div>
+										</div>	
+										<div class="col-md-6">
+											<img class="img-responsive" src="{if $product.product_image != ''}images/{$product.product_image}{else}images/dummy-image.jpg{/if}" style="max-height: 200px; margin:auto;">
+											<div class=" id="product_image">
+												<br>
+												Product image:
+												{if $product.product_image != ""}									
+												<p class="">{$product.product_image}</p>
+												{/if}
+												<input class="" type="file" name="product_image" value="{if $product.product_image != ''}{$product.product_image}{/if}" {if $product.product_image == ''}required{/if} >		
+											</div>
+										</div>				
+									</div>
+									</div>
+								</div>
+
+							<div id="colorlib-about" class="colorlib-light-grey">
+								<div class="container">				
+									<div class="row row-pb-lg">
+										<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box mb-0">
+											<span class="sm">Advantages</span>	
+											<br>						
+										</div>					
+										<div class="col-md-6">											
+											<img class="img-responsive" src="{if $product.image_1 != ''}images/{$product.image_1}{else}images/dummy-image.jpg{/if}" style="max-height: 200px; margin:auto;">
+											<div class=" id="image_1">
+												<br>
+												Advantage image:
+												{if $product.image_1 != ""}									
+												<p class="">{$product.image_1}</p>
+												{/if}
+												<input class="" type="file" name="image_1" value="{if $product.image_1 != ''}{$product.image_1}{/if}" {if $product.image_1 == ''}required{/if} >		
+											</div>
+										</div>
+										<div class="col-md-6 ">
+											
+											<div class="about animate-box">
+												<!-- <h2>Advantages</h2> -->
+												<div class="others-editor" id="content_1">
+													<p>#content_1</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										{for $i=1 to 3}
+										
+										<div class="col-md-4 animate-box">
+											<div class="services">
+												<span class="icon">
+													{if $i == 1}
+													<i class="flaticon-engineering"></i>
+													{elseif $i == 2}
+													<i class="flaticon-sketch"></i>
+													{elseif $i == 3}
+													<i class="flaticon-conveyor"></i>
+													{/if}
+												</span>
+												<div class="desc">
+													<div class="others-editor" id="title_info_{$i}">
+														<h3>#title_info_{$i}</h3>
+													</div>
+													<div class="others-editor" id="info_{$i}">
+														#info_{$i}													
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										{/for}
+									</div>
+									
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-						    <label for="">Short Description <span class="required">*</span></label>			
-						    <div class="row">						    	  
-							    <div class="col-md-8 ">	
-							    	<textarea class="form-control" name="short_desc" placeholder="#short description" required maxlength="150">{$product.short_desc}</textarea>		    					    
-								   <!-- <input class="form-control" name="product_name" value="{$product.short_desc}" placeholder="#short description" maxlength="150" required> -->
-								    <small id="" class="form-text text-muted">150 maximum characters. To use in Products page.</small>
+							
+							<div id="colorlib-about">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading mb-0">
+											<span class="sm">Applications</span>						
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-4 col-md-offset-2 animate-box">
+											<div class="others-editor services" id="application_1">
+												<p>#application_1</p>
+											</div>
+										</div>		
+										<div class="col-md-4 animate-box">
+											<div class="others-editor services" id="application_2">
+												<p>#application_2</p>
+											</div>
+										</div>					
+									</div>
+								</div>
+							</div>							
+
+							<div id="colorlib-about" class="colorlib-light-grey">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading mb-0">
+											<span class="sm">Product Line</span>						
+										</div>
+									</div>
+									
+									<div class="row">
+										{for $i=1 to 3}
+										
+										<div class="col-md-4 animate-box">
+											<div class="others-editor services" id="product_line_{$i}">
+												<p>#product_line_{$i}	</p>
+											</div>
+										</div>							
+										
+										{/for}
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-						    <label for="">Product Image <span class="required">*</span></label>	
-						    <div class="row">						    	  
-							    <div class="col-md-3 ">							    	
-									<input class="form-control" type="file" name="product_image" value="{if $product.product_image != ''}{$product.product_image}{/if}" {if $product.product_image == ''}required{/if}>
-									{if $product.product_image != ""}
-									<br>
-									<img class="crud-image img-responsive" src="./images/{$product.product_image}">
-									<p class="text-center">{$product.product_image}</p>
-									{/if}
-							    </div>   
-						    </div>		
-						</div>
-						<div class="form-group">
-						    <label for="">Main Description <span class="required">*</span></label>	
-						    <div class="row">
-						    	<div class="col-md-8 ">
-								  	<textarea class="form-control main-desc-editor" name="main_desc" placeholder="#main description" required>
-								  		{$product.main_desc}
-								  	</textarea>									  					    	
-							    </div>   								     
-						    </div>		
-						</div>
-						<div class="form-group">
-						    <label for="">Brochure <span class="required">*</span></label>	
-						    <div class="row">	
-							    <div class="col-md-3 text-center">
-							    	<input class="form-control" type="file" name="brochure" value="{if $product.brochure != ''}{$product.brochure}{/if}" {if $product.product_image == ''}required{/if}>
-							    	{if $product.brochure != ""}
-							    	<br>
-									<a href="./brochure/{$product.brochure}" target="__blank" style="margin: 0 auto;"><i class="far fa-file-pdf fa-3x" aria-hidden="true"></i> <br></a>
-									<p class="text-center">{$product.brochure}</p>
-									{/if}					    	
-							    </div>    		
-						    </div>			    						    
-						</div>					
-						<div class="form-group">
-						    <label for="">Advantages <span class="required">*</span>, Image <span class="required">*</span> & Informations</label>	
-						    <div class="row">
-						    	<div class="col-md-8 ">
-								  	<textarea class="form-control advantages-editor" name="content_1" placeholder="#advantages content">{$product.content_1}</textarea>									  					    	
-							    </div>   							
-							    <div class="col-md-3 ">							    	
-									<input class="form-control" type="file" name="image_1" value="{if $product.image_1 != ''}{$product.image_1}{/if}" {if $product.image_1 == ''}required{/if}>
-									{if $product.image_1 != ""}
-									<br>
-									<img class="crud-image img-responsive" src="./images/{$product.image_1}">
-									<p class="text-center">{$product.image_1}</p>
-									{/if}
-							    </div>  	     
-						    </div>		
-						    <div class="row">
-						    	<br>
-						    	<div class="col-md-4 ">
-						    		<input class="form-control" type="text" name="title_info_1" value="{$product.title_info_1}" placeholder="#title advantages info 1">
-						    		<br>
-								  	<textarea class="form-control advantages-info1-editor" name="info_1" placeholder="#advantages info 1">{$product.info_1}</textarea>									  					    	
-							    </div>   
 
-							    <div class="col-md-4 ">
-							    	<input class="form-control" type="text" name="title_info_2" value="{$product.title_info_2}" placeholder="#title advantages info 2">
-						    		<br>
-								  	<textarea class="form-control advantages-info2-editor" name="info_2" placeholder="#advantages info 2">{$product.info_2}</textarea>									  					    	
-							    </div>
-							    <div class="col-md-4 ">
-							    	<input class="form-control" type="text" name="title_info_3" value="{$product.title_info_3}" placeholder="#title advantages info 3">
-						    		<br>
-								  	<textarea class="form-control advantages-info3-editor" name="info_3" placeholder="#advantages info 3">{$product.info_3}</textarea>									  					    	
-							    </div>								     
-						    </div>
-						</div>  	
-						<div class="form-group">
-						    <label for="">Applications</label>	
-						    <div class="row">
-						    	<div class="col-md-4 ">
-								  	<textarea class="form-control application1-editor" name="application_1" placeholder="#application content">{$product.application_1}</textarea>									  					    	
-							    </div>   								     
-							    <div class="col-md-4 ">
-								  	<textarea class="form-control application2-editor" name="application_2" placeholder="#application content">{$product.application_2}</textarea>									  					    	
-							    </div>
-						    </div>	
-						</div>
+							<div id="colorlib-testimony" >
+								<div class="container">
+									<div class="row">
+										<div class="col-md-6 text-justify animate-box ">
+											<!-- <span class="sm">Certification</span> -->
+											<h2>Certification</h2>											
+											<div class="others-editor services" id="certification_desc" style="min-height: 150px">
+												<p>#certification_desc</p>
+											</div>
+										</div>		
+										<div class="col-md-5 col-md-offset-1 text-justify animate-box ">
+											<!-- <span class="sm">Certification</span> -->
+											<h2>&nbsp;</h2>
+											<div class="others-editor services" id="download_desc" style="min-height: 100px">
+												<p>#download_desc</p>
+											</div>											
+											<a class="btn-download" href="javascript:void(0)">
+												<i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp;&nbsp;Download Brochure
+											</a>
+											<br>
+											<br>												
+												{if $product.brochure != ""}									
+												Brochure:
+												<p class="">{$product.brochure}</p>
+												{/if}
+										</div>				
+									</div>
+								</div>
+							</div>
 
-						<div class="form-group">
-						    <label for="">Product Line <span class="required">*</span></label>	
-						    <div class="row">
-						    	<div class="col-md-4 ">
-								  	<textarea class="form-control productline1-editor" name="product_line_1" placeholder="#product line content">{$product.product_line_1}</textarea>									  					    	
-							    </div>   								     
-							    <div class="col-md-4 ">
-								  	<textarea class="form-control productline2-editor" name="product_line_2" placeholder="#product line content">{$product.product_line_2}</textarea>									  					    	
-							    </div>
-							    <div class="col-md-4 ">
-								  	<textarea class="form-control productline3-editor" name="product_line_3" placeholder="#product line content">{$product.product_line_3}</textarea>									  					    	
-							    </div>
-						    </div>	
 						</div>
-
-						<div class="form-group">
-						    <label for="">Certification Description <span class="required">*</span></label>	
-						    <div class="row">
-						    	<div class="col-md-8 ">
-								  	<textarea class="form-control certification-editor" name="certification_desc" placeholder="#certification description">{$product.certification_desc}</textarea>									  					    	
-							    </div>  
-						    </div>	
-						</div>
-
-						<div class="form-group">
-						    <label for="">Download Description <span class="required">*</span></label>	
-						    <div class="row">
-						    	<div class="col-md-8 ">
-								  	<textarea class="form-control download-editor" name="download_desc" placeholder="#download description">{$product.download_desc}</textarea>									  					    	
-							    </div>  
-						    </div>	
-						</div>
-
-					  	
-						  <button type="submit" class="btn btn-success">Submit</button>
+					  	<br>
+						  <button type="submit" class="btn btn-success pull-right">Submit</button>
 					</form>		
 				</div>
 				</div>
@@ -262,8 +326,9 @@
 	<script src="js/main.js"></script>
 
 	<!-- ckeditor -->
-	<script src="./plugin/ckeditor5-build-classic/ckeditor.js"></script>
+	<!-- <script src="./plugin/ckeditor5-build-classic/ckeditor.js"></script> -->
 	<!-- <script src="./plugin/ckeditor5-build-inline/ckeditor.js"></script> -->
+	<script src="./plugin/ckeditor5-custom/build/ckeditor.js"></script>
 
 	<script type="text/javascript">
 		//hide alert
@@ -271,77 +336,71 @@
 		    $('.alert').fadeOut();
         }, 3000);
 
-        ClassicEditor
-        .create( document.querySelector( '.main-desc-editor' ) )
+        /*ckeditor*/
+        /*init for product name only*/
+        let editor = [];
+        let editor_key = [];
+
+        InlineEditor
+        .create( document.querySelector( '#product_name_editor' ),
+        {
+        	placeholder: ' '
+        } )
+        .then( newEditor => {
+	        editor['product_name_editor'] = newEditor;
+	    } )
         .catch( error => {
             console.error( error );
         } );
 
-        ClassicEditor
-        .create( document.querySelector( '.advantages-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+        /*init for others*/
+        $.each( $(".others-editor") , function( i, l ){
+		  
+		  // console.log($(this).attr('id'))
 
-        ClassicEditor
-        .create( document.querySelector( '.advantages-info1-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		  	InlineEditor
+	        .create( document.querySelector( '#'+$(this).attr('id') ),
+	        {
+	        	removePlugins: ['Title']
+	        } )
+	        .then( newEditor => {
+		        editor[$(this).attr('id')] = newEditor;
+		        editor_key.push($(this).attr('id'));
 
-        ClassicEditor
-        .create( document.querySelector( '.advantages-info2-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		    } )
+	        .catch( error => {
+	            console.error( error );
+	        } );
 
-        ClassicEditor
-        .create( document.querySelector( '.advantages-info3-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		});
 
-        ClassicEditor
-        .create( document.querySelector( '.application1-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+        /*end ckeditor*/
+        
+        /*form ajax*/
+        $("#productForm").submit(function(e) {
 
-        ClassicEditor
-        .create( document.querySelector( '.application2-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		    e.preventDefault(); // avoid to execute the actual submit of the form.
 
-        ClassicEditor
-        .create( document.querySelector( '.productline1-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		    var form = $(this);
+		    var actionUrl = form.attr('action');		   		    
 
-        ClassicEditor
-        .create( document.querySelector( '.productline2-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		    // console.log(editor);
 
-        ClassicEditor
-        .create( document.querySelector( '.productline3-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		    $.each(editor_key, function(index,value){
+		    	console.log(editor[value].getData());
+		    });
 
-        ClassicEditor
-        .create( document.querySelector( '.certification-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
-
-        ClassicEditor
-        .create( document.querySelector( '.download-editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+		    /*$.ajax({
+		        type: "POST",
+		        url: actionUrl,
+		        data: form.serialize(), // serializes the form's elements.
+		        success: function(data)
+		        {
+		          alert(data); // show response from the php script.
+		        }
+		    });*/
+		    
+		});
 	</script>
 </body>
 

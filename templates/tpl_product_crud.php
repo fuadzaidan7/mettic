@@ -98,7 +98,9 @@
 				<div class="row {if empty($product) && $open != 1}collapse{/if}" id="formAdd">
 					<hr>
 					<br>
-										<h3>{if empty($product)}Add{else}Edit{/if} Product</h3>
+					<h3>{if empty($product)}Add{else}Edit{/if} Product</h3>
+					<span>Note : This product page will appear exactly as the form filled below. Area with hashtag (eg. #details) is editable.</span><br><br>
+
 					<form action="./index.php?module=product_crud" method="POST" enctype="multipart/form-data" id="productForm">
 						<input type="hidden" name="action" value="{if empty($product)}AddProduct{else}EditProduct{/if}">
 						<input type="hidden" name="product_id" value="{if !empty($product)}{$product.product_id}{/if}">

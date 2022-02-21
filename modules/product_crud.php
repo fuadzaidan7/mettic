@@ -273,7 +273,7 @@ if(isset($_GET['product_id']))
 	$body->assign("product", $product);
 }
 else{	
-	$body->assign("open", 1);//$_GET['open']
+	$body->assign("open", $_GET['open']);//$_GET['open']
 	$body->assign("message_type", $message_type);
 }
 

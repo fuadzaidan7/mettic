@@ -12,6 +12,19 @@
 					<div id="colorlib-logo"><a href="./index.php?module=home"><img src="images/logo.webp"></a></div>
 					<br>
 				</div>
+				<div id="error_alert_div" style="display: none">
+					<div class="alert alert-danger" role="alert">
+					  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					  <span id="error_alert_message"></span>
+					</div>
+				</div>
+				<div id="success_alert_div" style="display: none">
+					<div class="alert alert-success" role="alert">
+					  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					  <span id="success_alert_message"></span>
+					</div>
+				</div>
+
 				{if $message_type != ""}
 				<div class="row">
 				{if $message_type == 1}
@@ -102,8 +115,8 @@
 									   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 									   				<div class="slider-text-inner text-center">
 									   					<h2>METTIC SYSTEME</h2>
-									   					<div id="product_name_editor" style="text-align: center;">
-									   						<h1>#product_name</h1>
+									   					<div id="product_name" style="text-align: center;">
+									   						{if $product.product_name != ''}{$product.product_name}{else}<h1>#product_name</h1>{/if}
 									   					</div>									   					
 									   				</div>
 									   			</div>
@@ -119,9 +132,9 @@
 									<div class="row">
 										
 										<div class="col-md-6 colorlib-heading animate-box">	
-											<div class="others-editor" id="main_description" style="min-height: 150px">					
+											<div class="others-editor" id="main_desc" style="min-height: 150px">					
 												<p>
-													#main_description
+													{if $product.main_desc != ''}{$product.main_desc}{else}#main_description{/if}
 												</p>
 											</div>
 											<br>
@@ -135,7 +148,8 @@
 												{if $product.brochure != ""}									
 												<p class="">{$product.brochure}</p>
 												{/if}
-												<input class="" type="file" name="brochure" value="{if $product.brochure != ''}{$product.brochure}{/if}" {if $product.brochure == ''}required{/if}>
+												<input class="form-input" type="file" name="brochure" value="{if $product.brochure != ''}{$product.brochure}{/if}" >
+												<input type="hidden" name="brochure_path" value="{if $product.brochure != ''}{$product.brochure}{/if}">
 											</div>
 										</div>	
 										<div class="col-md-6">
@@ -146,7 +160,8 @@
 												{if $product.product_image != ""}									
 												<p class="">{$product.product_image}</p>
 												{/if}
-												<input class="" type="file" name="product_image" value="{if $product.product_image != ''}{$product.product_image}{/if}" {if $product.product_image == ''}required{/if} >		
+												<input class="form-input" type="file" name="product_image" value="{if $product.product_image != ''}{$product.product_image}{/if}" >		
+												<input type="hidden" name="product_image_path" value="{if $product.product_image != ''}{$product.product_image}{/if}">
 											</div>
 										</div>				
 									</div>
@@ -168,7 +183,8 @@
 												{if $product.image_1 != ""}									
 												<p class="">{$product.image_1}</p>
 												{/if}
-												<input class="" type="file" name="image_1" value="{if $product.image_1 != ''}{$product.image_1}{/if}" {if $product.image_1 == ''}required{/if} >		
+												<input class="form-input" type="file" name="image_1" value="{if $product.image_1 != ''}{$product.image_1}{/if}" >
+												<input type="hidden" name="image_1_path" value="{if $product.image_1 != ''}{$product.image_1}{/if}">		
 											</div>
 										</div>
 										<div class="col-md-6 ">
@@ -176,7 +192,8 @@
 											<div class="about animate-box">
 												<!-- <h2>Advantages</h2> -->
 												<div class="others-editor" id="content_1">
-													<p>#content_1</p>
+													
+													{if $product.content_1 != ''}{$product.content_1}{else}<p>#content_1</p>{/if}
 												</div>
 											</div>
 										</div>
@@ -198,10 +215,11 @@
 												</span>
 												<div class="desc">
 													<div class="others-editor" id="title_info_{$i}">
-														<h3>#title_info_{$i}</h3>
+														{if $product.{"title_info_$i"} != ''}{$product.{"title_info_$i"}}{else}<h3>#title_info_{$i}</h3>{/if}
+														
 													</div>
 													<div class="others-editor" id="info_{$i}">
-														#info_{$i}													
+														{if $product.{"title_info_$i"} != ''}{$product.{"info_$i"}}{else}#info_{$i}{/if}
 													</div>
 												</div>
 											</div>
@@ -224,12 +242,13 @@
 									<div class="row">
 										<div class="col-md-4 col-md-offset-2 animate-box">
 											<div class="others-editor services" id="application_1">
-												<p>#application_1</p>
+												
+												{if $product.application_1 != ''}{$product.application_1}{else}<p>#application_1</p>{/if}
 											</div>
 										</div>		
 										<div class="col-md-4 animate-box">
 											<div class="others-editor services" id="application_2">
-												<p>#application_2</p>
+												{if $product.application_2 != ''}{$product.application_2}{else}<p>#application_2</p>{/if}
 											</div>
 										</div>					
 									</div>
@@ -249,7 +268,9 @@
 										
 										<div class="col-md-4 animate-box">
 											<div class="others-editor services" id="product_line_{$i}">
-												<p>#product_line_{$i}	</p>
+												
+
+												{if $product.{"product_line_{$i}"} != ''}{$product.{"product_line_{$i}"}}{else}<p>#product_line_{$i}	</p>{/if}
 											</div>
 										</div>							
 										
@@ -264,15 +285,15 @@
 										<div class="col-md-6 text-justify animate-box ">
 											<!-- <span class="sm">Certification</span> -->
 											<h2>Certification</h2>											
-											<div class="others-editor services" id="certification_desc" style="min-height: 150px">
-												<p>#certification_desc</p>
+											<div class="others-editor services" id="certification_desc" style="min-height: 150px">												
+												{if $product.certification_desc != ''}{$product.certification_desc}{else}<p>#certification_desc</p>{/if}
 											</div>
 										</div>		
 										<div class="col-md-5 col-md-offset-1 text-justify animate-box ">
 											<!-- <span class="sm">Certification</span> -->
 											<h2>&nbsp;</h2>
 											<div class="others-editor services" id="download_desc" style="min-height: 100px">
-												<p>#download_desc</p>
+												{if $product.download_desc != ''}{$product.download_desc}{else}<p>#download_desc</p>{/if}
 											</div>											
 											<a class="btn-download" href="javascript:void(0)">
 												<i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp;&nbsp;Download Brochure
@@ -342,12 +363,13 @@
         let editor_key = [];
 
         InlineEditor
-        .create( document.querySelector( '#product_name_editor' ),
+        .create( document.querySelector( '#product_name' ),
         {
-        	placeholder: ' '
+        	placeholder: ' ',
         } )
         .then( newEditor => {
-	        editor['product_name_editor'] = newEditor;
+	        editor['product_name'] = newEditor;
+	        editor_key.push('product_name');
 	    } )
         .catch( error => {
             console.error( error );
@@ -382,25 +404,96 @@
 		    e.preventDefault(); // avoid to execute the actual submit of the form.
 
 		    var form = $(this);
-		    var actionUrl = form.attr('action');		   		    
+		    var actionUrl = form.attr('action');
 
-		    // console.log(editor);
+		    var form_data = form.serializeArray();		    
+
+		    // console.log(actionUrl);
 
 		    $.each(editor_key, function(index,value){
-		    	console.log(editor[value].getData());
+		    	// console.log(editor[value].getData());
+		    	
+		    	form_data.push({ name: value, value: editor[value].getData() });
 		    });
 
-		    /*$.ajax({
+		    $.ajax({
 		        type: "POST",
 		        url: actionUrl,
-		        data: form.serialize(), // serializes the form's elements.
+		        data: form_data, // serializes the form's elements.		        
+			    dataType: "json",
 		        success: function(data)
 		        {
-		          alert(data); // show response from the php script.
+		          // alert(data); // show response from the php script.
+		          if(data.status)
+		          {
+		          	// location.reload();
+
+		          	window.location.href = data.go_page;
+
+		       //$('#success_alert_message').text("Adding new product successful.");
+		       //    	$('#success_alert_div').show();
+
+		       //    	setTimeout(function () {
+					    // $('#success_alert_div').fadeOut();
+			      //   }, 3000);
+
+			      //   $('#productForm')[0].reset();
+		          }
+		          else
+		          {
+		          	
+		          	$('#error_alert_message').text("Error adding new product.");
+		          	$('#error_alert_div').fadeIn();
+
+		          	setTimeout(function () {
+					    $('#error_alert_div').fadeOut();
+			        }, 3000);
+
+		          	//scroll to top
+			        $('.js-gotop').click();
+		          }
 		        }
-		    });*/
+		    });
 		    
 		});
+
+		$('#productForm input[type="file"]').on('change', function(){
+	    	// console.log($(this).attr('name'));
+
+	    	// console.log($(this)[0].files);
+
+	    	// form_data.push({ name: $(this).attr('name'), value: $(this)[0].files });
+
+	    	var fd = new FormData();
+	        var files = $(this)[0].files;
+	        var input_name = $(this).attr('name');
+
+	        // Check file selected or not
+	        if(files.length > 0){
+	           fd.append('file',files[0]);
+
+	           $.ajax({
+	              url: './index.php?module=product_crud&action=UploadFileOrImage&input_name='+input_name,
+	              type: 'post',
+	              data: fd,
+	              contentType: false,
+	              processData: false,
+			      dataType: "json",
+	              success: function(data){	              	
+	                 if(data.status){
+	                    
+	                    // console.log('input[name="'+input_name+'_path"] = '+data.file_name)
+
+	                    $('input[name="'+input_name+'_path"]').val(data.file_name);
+	                 }else{
+	                    alert('file not uploaded');
+	                 }
+	              },
+	           });
+	        }else{
+	           alert("Please select a file.");
+	        }
+	    });
 	</script>
 </body>
 

@@ -15,7 +15,7 @@
 										<ul class="dropdown">
 											<!-- <li><a href="./index.php?module=product&product_id=1">Sample 1</a></li> -->
 											{foreach $products as $v}
-											<li {if $module == 'product'}class="active"{/if}><a href="./index.php?module=product&product_id={$v.product_id}">{$v.product_name}</a></li>
+											<li {if $product_id == $v.product_id}class="active"{/if}><a href="./index.php?module=product&product_id={$v.product_id}">{$v.product_name}</a></li>
 											{/foreach}
 										</ul>
 									</li>

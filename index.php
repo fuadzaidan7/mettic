@@ -49,9 +49,15 @@ $products = $result -> fetch_all(MYSQLI_ASSOC);
 // Free result set
 $result -> free_result();
 
+foreach ($products as $key => $value) {
+	$pname = str_replace('<h1>', '', $value['product_name']);
+	$products[$key]['product_name'] = str_replace('</h1>', '', $pname);
+}
+
 // $mysqli -> close();
 
 $header->assign("module", $module);	
+$header->assign("product_id", $_GET['product_id']);	
 $header->assign("products", $products);
 
 $header = $header->fetch("tpl_header.php");

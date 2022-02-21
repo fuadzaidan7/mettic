@@ -1,10 +1,11 @@
 <?php
 	
 
-
 if($_POST['action'] == "AddProduct")
 {
-	echo "<pre>"; print_r($_POST); echo "</pre>"; exit();	
+	// echo "<pre>"; print_r($_POST); echo "</pre>"; 	
+
+	// exit();	
 
 	// echo "<pre>"; print_r($_FILES); echo "</pre>";
 
@@ -18,58 +19,83 @@ if($_POST['action'] == "AddProduct")
 
 		// echo $key." - ".$value."<br>";
 
-		if(!in_array($key, $unrelated_info) && !empty($value))
-		{
-			if($column_data != "")
+		if(strpos($key, "_path") !== false) //image and file path
+		{			
+			if(in_array($key, array("brochure_path")))
 			{
-				$column_data .= ", ";
+				$from_dir = "./brochure/temp_brochure/".$value;
+				$target_dir = "./brochure/";
+				$target_file = $target_dir.$value;
 			}
+			elseif(in_array($key, array("product_image_path","image_1_path")))
+			{
+				$from_dir = "./images/temp_images/".$value;
+				$target_dir = "./images/";
+				$target_file = $target_dir.$value;
+			}
+			
+			if(file_exists($from_dir) && $value != '')
+			{
+				if (copy($from_dir, $target_file)) {
+				    // echo "The file ". $value. " has been uploaded.<br>";
 
-			$data = $mysqli -> real_escape_string($_POST[$key]);
-			$column_data .= $key." = '".$data."'";
+					unlink($from_dir); //remove because using copy
+
+					if($column_data != "")
+					{
+						$column_data .= ", ";
+					}
+
+				    $data = $mysqli -> real_escape_string($value);
+					$column_data .= str_replace("_path", "", $key)." = '".$data."'";
+
+				} else {
+				    // echo "Sorry, there was an error uploading your file.<br>";
+				    echo json_encode(array("status" => false));
+				    exit();
+				}
+			}
 		}
+		else //other input
+		{
+			if(!in_array($key, $unrelated_info) && !empty($value))
+			{
+				if($column_data != "")
+				{
+					$column_data .= ", ";
+				}
+
+				if($key == "product_name")
+				{
+					$value = str_replace("<p>&nbsp;</p>", "", $value);
+				}
+
+				$data = $mysqli -> real_escape_string($value);
+				$column_data .= $key." = '".$data."'";
+			}
+		}
+
 	}
 
-	//store file & images
-	foreach ($_FILES as $key => $value) {
-		if(in_array($key, array("brochure")))
-		{
-			$target_dir = "./brochure/";
-			$target_file = $target_dir.basename($_FILES[$key]["name"]);
-		}
-		elseif(in_array($key, array("product_image","image_1")))
-		{
-			$target_dir = "./images/";
-			$target_file = $target_dir.basename($_FILES[$key]["name"]);
-		}
-
-		if (move_uploaded_file($_FILES[$key]["tmp_name"], $target_file)) {
-		    // echo "The file ". htmlspecialchars( basename( $_FILES[$key]["name"])). " has been uploaded.<br>";
-
-			if($column_data != "")
-			{
-				$column_data .= ", ";
-			}
-
-		    $data = $mysqli -> real_escape_string(basename($_FILES[$key]["name"]));
-			$column_data .= $key." = '".$data."'";
-
-		} else {
-		    // echo "Sorry, there was an error uploading your file.<br>";
-		}
-	}
+	
 
 	$query = "INSERT INTO products SET ".$column_data.", created_by = ".$_SESSION['user_details']['user_id'];
 
-	// echo $query;
-
-	// exit();
+	// echo $query; exit();
 
 	if ($mysqli->query($query) === TRUE) {
-	  header("Location: ./index.php?module=product_crud&message_type=1");		  
+	  // header("Location: ./index.php?module=product_crud&message_type=1");
+	  $go_page = "./index.php?module=product_crud";
+	  $status = true;		  
+	  $_SESSION['message_type'] = 1;
 	} else {
-	  header("Location: ./index.php?module=product_crud&message_type=2");	
+	  // header("Location: ./index.php?module=product_crud&message_type=2");	
+		$status = false;
 	}
+
+	echo json_encode(array("status" => $status, "go_page" => $go_page));
+
+	exit();
 }
 if($_POST['action'] == "EditProduct")
 {
@@ -87,45 +113,62 @@ if($_POST['action'] == "EditProduct")
 
 		// echo $key." - ".$value."<br>";
 
-		if(!in_array($key, $unrelated_info) && !empty($value))
-		{
-			if($column_data != "")
+		if(strpos($key, "_path") !== false) //image and file path
+		{			
+			if(in_array($key, array("brochure_path")))
 			{
-				$column_data .= ", ";
+				$from_dir = "./brochure/temp_brochure/".$value;
+				$target_dir = "./brochure/";
+				$target_file = $target_dir.$value;
 			}
-
-			$data = $mysqli -> real_escape_string($_POST[$key]);
-			$column_data .= $key." = '".$data."'";
-		}
-	}
-
-	//store file & images
-	foreach ($_FILES as $key => $value) {
-		if(in_array($key, array("brochure")))
-		{
-			$target_dir = "./brochure/";
-			$target_file = $target_dir.basename($_FILES[$key]["name"]);
-		}
-		elseif(in_array($key, array("product_image","image_1")))
-		{
-			$target_dir = "./images/";
-			$target_file = $target_dir.basename($_FILES[$key]["name"]);
-		}
-
-		if (move_uploaded_file($_FILES[$key]["tmp_name"], $target_file)) {
-		    // echo "The file ". htmlspecialchars( basename( $_FILES[$key]["name"])). " has been uploaded.<br>";
-
-			if($column_data != "")
+			elseif(in_array($key, array("product_image_path","image_1_path")))
 			{
-				$column_data .= ", ";
+				$from_dir = "./images/temp_images/".$value;
+				$target_dir = "./images/";
+				$target_file = $target_dir.$value;
 			}
+			
+			if(file_exists($from_dir))
+			{
+				if (copy($from_dir, $target_file)) {
+				    // echo "The file ". $value. " has been uploaded.<br>";
 
-		    $data = $mysqli -> real_escape_string(basename($_FILES[$key]["name"]));
-			$column_data .= $key." = '".$data."'";
+					unlink($from_dir); //remove because using copy
 
-		} else {
-		    // echo "Sorry, there was an error uploading your file.<br>";
+					if($column_data != "")
+					{
+						$column_data .= ", ";
+					}
+
+				    $data = $mysqli -> real_escape_string($value);
+					$column_data .= str_replace("_path", "", $key)." = '".$data."'";
+
+				} else {
+				    // echo "Sorry, there was an error uploading your file.<br>";
+				    echo json_encode(array("status" => false));
+				    exit();
+				}
+			}
 		}
+		else //other input
+		{
+			if(!in_array($key, $unrelated_info) && !empty($value))
+			{
+				if($column_data != "")
+				{
+					$column_data .= ", ";
+				}
+
+				if($key == "product_name")
+				{
+					$value = str_replace("<p>&nbsp;</p>", "", $value);
+				}
+
+				$data = $mysqli -> real_escape_string($value);
+				$column_data .= $key." = '".$data."'";
+			}
+		}
+
 	}
 
 	$query = "UPDATE products SET ".$column_data.", created_by = ".$_SESSION['user_details']['user_id']." WHERE product_id = ".$_POST['product_id'];
@@ -135,21 +178,80 @@ if($_POST['action'] == "EditProduct")
 	// exit();
 
 	if ($mysqli->query($query) === TRUE) {
-	  header("Location: ./index.php?module=product_crud&message_type=3");		  
+	  	// header("Location: ./index.php?module=product_crud&message_type=1");
+	  	$go_page = "./index.php?module=product_crud";
+	  	$status = true;		  
+		$_SESSION['message_type'] = 3;
 	} else {
-	  header("Location: ./index.php?module=product_crud&message_type=4");	
+	  // header("Location: ./index.php?module=product_crud&message_type=2");	
+		$status = false;
 	}
+
+	echo json_encode(array("status" => $status, "go_page" => $go_page));
+
+	exit();
 }
 elseif ($_GET['action'] == "delete") {
 	
 	$sql = "DELETE FROM `products` WHERE `product_id` = ".$_GET['product_id'];
 	
 	if ($mysqli->query($sql) === TRUE) {
-	  header("Location: ./index.php?module=product_crud&message_type=5");	
+	  
+	  $_SESSION['message_type'] = 5;	
+	  header("Location: ./index.php?module=product_crud");
 	} else {
-	  header("Location: ./index.php?module=product_crud&message_type=6");	
+		$_SESSION['message_type'] = 6;	
+	  header("Location: ./index.php?module=product_crud");	
 	}
 
+	exit();
+}
+elseif($_GET['action'] == "UploadFileOrImage")
+{	
+	// echo "<pre>"; print_r($_FILES); echo "</pre>"; 
+	// exit();
+
+	$file_name = "";
+
+	foreach ($_FILES as $key => $value) {
+		if(in_array($_GET['input_name'], array("brochure")))
+		{
+			$target_dir = "./brochure/temp_brochure/";
+			$target_file = $target_dir.basename($value["name"]);
+		}
+		elseif(in_array($_GET['input_name'], array("product_image","image_1")))
+		{
+			$target_dir = "./images/temp_images/";
+			$target_file = $target_dir.basename($value["name"]);
+		}
+
+		if (move_uploaded_file($value["tmp_name"], $target_file)) {
+		    // echo "The file ". htmlspecialchars( basename( $_FILES[$key]["name"])). " has been uploaded.<br>";
+
+			if($file_name != "")
+			{
+				$file_name .= ", ";
+			}
+
+		    $data = basename($_FILES[$key]["name"]);
+			$file_name .= $data;
+
+			$status = true;
+		} else {
+		    // echo "Sorry, there was an error uploading your file.<br>";
+		    $status = false;
+		}
+	}	
+
+	echo json_encode(array("status" => $status, "file_name" => $file_name));
+
+	exit();
+}
+
+if(isset($_SESSION['message_type']))
+{
+	$message_type = $_SESSION['message_type'];
+	unset($_SESSION['message_type']);
 }
 
 //edit product
@@ -171,9 +273,8 @@ if(isset($_GET['product_id']))
 	$body->assign("product", $product);
 }
 else{	
-
 	$body->assign("open", 1);//$_GET['open']
-	$body->assign("message_type", $_GET['message_type']);
+	$body->assign("message_type", $message_type);
 }
 
 $body->assign("products", $products);

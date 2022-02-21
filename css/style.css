@@ -1072,7 +1072,9 @@ input[type="text"] {
 
 #colorlib-footer {
   background: #1E2022;
-  color: rgba(255, 255, 255, 0.6) !important; }
+  color: rgba(255, 255, 255, 0.6) !important; 
+  font-size: 14px;
+}
   #colorlib-footer .colorlib-footer-links {
     padding: 0;
     margin: 0; }
@@ -1567,4 +1569,41 @@ body{
 
 span.required{
   color: red;
+}
+
+/*bootstrap 5th column custom*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
 }

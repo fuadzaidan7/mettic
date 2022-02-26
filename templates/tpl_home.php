@@ -23,7 +23,7 @@
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   	<li style="background-image: url(images/stock-photo-panorama-view-at-workers-are-working-on-large-construction-sites-and-many-cranes-are-working-in-the-1549270244.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">

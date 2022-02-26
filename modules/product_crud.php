@@ -58,7 +58,7 @@ if($_POST['action'] == "AddProduct")
 		}
 		else //other input
 		{
-			if(!in_array($key, $unrelated_info))// && !empty($value)
+			if(!in_array($key, $unrelated_info) && !empty($value))
 			{
 				if($column_data != "")
 				{
@@ -152,7 +152,7 @@ if($_POST['action'] == "EditProduct")
 		}
 		else //other input
 		{
-			if(!in_array($key, $unrelated_info)) // && !empty($value)
+			if(!in_array($key, $unrelated_info) && !empty($value)) // && !empty($value)
 			{
 				if($column_data != "")
 				{

@@ -10,7 +10,7 @@
 			<aside id="colorlib-hero">
 				<div class="flexslider">
 					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   	<li style="background-image: url(images/stock-photo-a-construction-worker-control-a-pouring-concrete-pump-on-construction-site-and-sunset-background-752076598.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">

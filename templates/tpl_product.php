@@ -65,10 +65,10 @@
 						</div>
 					</div>
 				</div>
-				{if $product.title_info_1 != ""}
+				{if $product.title_info_1|strip_tags:false != "#title_info_1"}
 				<div class="row">
 					{for $i=1 to 3}
-					{if $product.{"title_info_$i"} != ""}
+					{if $product.{"title_info_$i"}|strip_tags:false != "#title_info_$i"}
 					<div class="col-md-4 animate-box">
 						<div class="services">
 							<span class="icon">

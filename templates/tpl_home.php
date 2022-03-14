@@ -247,45 +247,7 @@
 				</div>
 			</div>
 			
-			<div id="colorlib-blog">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 animate-box colorlib-heading animate-box">
-							<span class="sm">Recent Blog</span>
-							<h2><span class="thin">Read</span> <span class="thick">Our Blog</span></h2>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-							<p><a href="blog.html">View All Blog Post <i class="icon-arrow-right3"></i></a></p>
-						</div>
-						<div class="col-md-8">
-							<div class="row">
-								<div class="wrap">
-									<div class="blog-entry animate-box">
-										<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);"></a>
-										<div class="desc">
-											<span>&mdash; 20 Jan, 2017 </span>
-											<h2><a href="blog.html">Construction was awarded with “The Best Construction Company” prize</a></h2>
-										</div>
-									</div>
-									<div class="blog-entry animate-box">
-										<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);"></a>
-										<div class="desc">
-											<span>&mdash; 20 Jan, 2017 </span>
-											<h2><a href="blog.html">New Doublered Residence Facility Occupied and Second to Begin this Month</a></h2>
-										</div>
-									</div>
-									<div class="blog-entry animate-box">
-										<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);"></a>
-										<div class="desc">
-											<span>&mdash; 20 Jan, 2017 </span>
-											<h2><a href="blog.html">New Saint Michael’s College Residence Hall Buzzing with Student Activity</a></h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
+			
 		
 			<div id="colorlib-subscribe">
 				<div class="overlay"></div>

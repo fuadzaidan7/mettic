@@ -900,7 +900,7 @@ article {
     background: #fff;
     padding: 1.5em 1em;
     opacity: 1;
-    height: 105px;
+    /*height: 105px;*/    height: 70px;
     overflow: hidden; }
     .staff .desc h3 {
       font-weight: 700;

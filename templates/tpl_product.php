@@ -10,14 +10,14 @@
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
+			   	<li style="{if $product.product_bg_image != ""}background-image: url(images/{$product.product_bg_image}){/if};">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
 				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h2>METTIC SYSTEME</h2>
-				   					<h1>{$product.product_name}</h1>
+				   					{if substr(strip_tags($product.product_name),0,1) != "#"}<h1>{$product.product_name}</h1>{/if}
 				   				</div>
 				   			</div>
 				   		</div>
@@ -31,17 +31,19 @@
 				<div class="container">
 				<div class="row">
 					
-					<div class="col-md-6 colorlib-heading animate-box">						
-						<p>
+					<div class="col-md-6 colorlib-heading animate-box">	
+						{if substr(strip_tags($product.main_desc),0,1) != "#"}					
+						
 							{$product.main_desc}
-						</p>
+												
 						<br>
+						{/if}
 						<a class="btn-download" target="__blank" href="./brochure/{$product.brochure}">
 							<i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp;&nbsp;Download Brochure
 						</a>
 					</div>	
 					<div class="col-md-6">
-						<img class="img-responsive" src="images/{$product.product_image}" >
+						<img class="img-responsive" src="images/{if $product.product_image != ""}{$product.product_image}{else}dummy-image.jpg{/if}" >
 					</div>				
 				</div>
 				</div>
@@ -55,14 +57,15 @@
 						<br>						
 					</div>					
 					<div class="col-md-6">
-						<img class="img-responsive" src="images/{$product.image_1}" alt="Free HTML5 Bootstrap Template by colorlib.com">
+						<img class="img-responsive" src="images/{if $product.image_1 != ""}{$product.image_1}{else}dummy-image.jpg{/if}" alt="Free HTML5 Bootstrap Template by colorlib.com">
 					</div>
 					<div class="col-md-6 ">
-						
+						{if substr(strip_tags($product.content_1),0,1) != "#"}
 						<div class="about animate-box">
 							<!-- <h2>Advantages</h2> -->
-							<p>{$product.content_1}</p>
+							{$product.content_1}
 						</div>
+						{/if}
 					</div>
 				</div>
 				{if $product.title_info_1|strip_tags:false|substr:0:1 != "#"}
@@ -81,7 +84,7 @@
 								{/if}
 							</span>
 							<div class="desc">
-								<h3>{$product.{"title_info_$i"}}</h3>
+								{$product.{"title_info_$i"}}
 								{$product.{"info_$i"}}													
 							</div>
 						</div>
@@ -92,8 +95,8 @@
 				{/if}
 			</div>
 		</div>
-
-		{if $product.application_1 != ""}
+		
+		{if $product.application_1|strip_tags:false|substr:0:1 != "#"}
 		<div id="colorlib-about">
 			<div class="container">
 				<div class="row">
@@ -103,22 +106,26 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-md-4 col-md-offset-2 animate-box">
+					<div class="col-md-4 col-md-offset-2 animate-box">						
+						{if $product.application_1|strip_tags:false|substr:0:1 != "#"}
 						<div class="services">								
 							{$product.application_1}
 						</div>
+						{/if}
 					</div>		
-					<div class="col-md-4 animate-box">
+					<div class="col-md-4 animate-box">						
+						{if $product.application_2|strip_tags:false|substr:0:1 != "#"}
 						<div class="services">								
 							{$product.application_2}
 						</div>
+						{/if}
 					</div>					
 				</div>
 			</div>
 		</div>
 		{/if}
-
-		{if $product.product_line_1 != ""}	
+		
+		{if $product.product_line_1|strip_tags:false|substr:0:1 != "#"}
 		<div id="colorlib-about" class="colorlib-light-grey">
 			<div class="container">
 				<div class="row">
@@ -128,8 +135,8 @@
 				</div>
 				
 				<div class="row">
-					{for $i=1 to 3}
-					{if $product.{"product_line_$i"} != ""}
+					{for $i=1 to 3}					
+					{if $product.{"product_line_$i"}|strip_tags:false|substr:0:1 != "#"}
 					<div class="col-md-4 {if $i == 1 && $product.product_line_3 == ''}col-md-offset-2{/if} animate-box">
 						<div class="services">								
 							{$product.{"product_line_$i"}}							
@@ -142,31 +149,34 @@
 		</div>
 		{/if}
 
+		{if substr(strip_tags($product.certification_desc),0,1) != "#" && substr(strip_tags($product.download_desc),0,1) != "#"}
 		<div id="colorlib-testimony" >
 			<div class="container">
 				<div class="row">
+					{if substr(strip_tags($product.certification_desc),0,1) != "#"}
 					<div class="col-md-6 text-justify animate-box ">
 						<!-- <span class="sm">Certification</span> -->
-						<h2>Certification</h2>
-						<p>
-							{$product.certification_desc}
-						</p>
+						<h2>Certification</h2>						
+						{$product.certification_desc}						
 					</div>		
+					{/if}
+					{if substr(strip_tags($product.download_desc),0,1) != "#"}
 					<div class="col-md-5 col-md-offset-1 text-justify animate-box ">
 						<!-- <span class="sm">Certification</span> -->
 						<h2>&nbsp;</h2>
-						<p>
-							{$product.download_desc}
-						</p>
+						
+						{$product.download_desc}
+						
 						<br>
 						<a class="btn-download" target="__blank" href="./brochure/{$product.brochure}">
 							<i class="far fa-file-pdf" aria-hidden="true"></i>&nbsp;&nbsp;Download Brochure
 						</a>
-					</div>				
+					</div>		
+					{/if}		
 				</div>
 			</div>
 		</div>
-
+		{/if}
 	
 		<!-- <div id="colorlib-subscribe">
 			<div class="overlay"></div>

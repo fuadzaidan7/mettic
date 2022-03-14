@@ -27,7 +27,7 @@ if($_POST['action'] == "AddProduct")
 				$target_dir = "./brochure/";
 				$target_file = $target_dir.$value;
 			}
-			elseif(in_array($key, array("product_image_path","image_1_path")))
+			elseif(in_array($key, array("product_image_path","image_1_path","product_bg_image_path")))
 			{
 				$from_dir = "./images/temp_images/".$value;
 				$target_dir = "./images/";
@@ -121,7 +121,7 @@ if($_POST['action'] == "EditProduct")
 				$target_dir = "./brochure/";
 				$target_file = $target_dir.$value;
 			}
-			elseif(in_array($key, array("product_image_path","image_1_path")))
+			elseif(in_array($key, array("product_bg_image_path","product_image_path","image_1_path")))
 			{
 				$from_dir = "./images/temp_images/".$value;
 				$target_dir = "./images/";
@@ -219,7 +219,7 @@ elseif($_GET['action'] == "UploadFileOrImage")
 			$target_dir = "./brochure/temp_brochure/";
 			$target_file = $target_dir.basename($value["name"]);
 		}
-		elseif(in_array($_GET['input_name'], array("product_image","image_1")))
+		elseif(in_array($_GET['input_name'], array("product_bg_image","product_image","image_1")))
 		{
 			$target_dir = "./images/temp_images/";
 			$target_file = $target_dir.basename($value["name"]);

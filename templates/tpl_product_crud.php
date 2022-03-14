@@ -110,7 +110,7 @@
 							<aside id="colorlib-hero">
 								<div class="flexslider">
 									<ul class="slides">
-								   	<li style="background-image: url(images/img_bg_1.jpg);">
+								   	<li style="{if $product.product_bg_image != ""}background-image: url(images/{$product.product_bg_image}){else}background-image: url(images/dummy-image.jpg);background-position-y: center;{/if};">
 								   		<div class="overlay"></div>
 								   		<div class="container-fluid">
 								   			<div class="row">
@@ -129,15 +129,30 @@
 							  	</div>
 							</aside>
 
+							<div class="col-md-12" style="border : 1px solid #cecece; padding: 10px; border-radius: 5px; margin-top: 10px">
+								<div class="col-md-6">									
+									<label>Short Description</label><textarea class="form-control" name="short_desc" maxlength="200">{$product.short_desc}</textarea>
+									<small class="pull-right">This only appears on products page</small>
+								</div>								
+								<div class="col-md-6">									
+									<label>Product Background Image</label>
+									{if $product.product_bg_image != ""}									
+									<p class="">{$product.product_bg_image}</p>
+									{/if}
+									<input class="form-input" type="file" name="product_bg_image" value="{if $product.product_bg_image != ''}{$product.product_bg_image}{/if}" >
+									<input type="hidden" name="product_bg_image_path" value="{if $product.product_bg_image != ''}{$product.product_bg_image}{/if}">
+								</div>
+							</div>
+
 							<div id="colorlib-services" class="">
 									<div class="container">
 									<div class="row">
 										
 										<div class="col-md-6 colorlib-heading animate-box">	
 											<div class="others-editor" id="main_desc" style="min-height: 150px">					
-												<p>
+												
 													{if $product.main_desc != ''}{$product.main_desc}{else}#main_description{/if}
-												</p>
+												
 											</div>
 											<br>
 											<a class="btn-download" href="javascript:void(0)">
@@ -496,6 +511,11 @@
 	           alert("Please select a file.");
 	        }
 	    });
+
+		/*$('#colorlib-hero li').on('click', function(event ){
+			console.log(event.target.nodeName)
+		})*/
+
 	</script>
 </body>
 

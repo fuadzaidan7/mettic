@@ -36,7 +36,7 @@
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(images/stock-photo-construction-worker-and-contractor-client-shaking-hands-with-team-builder-in-renovation-site-1801571473.jpg);">
+				   	<li style="background-image: url(images/stock-photo-successful-deal-male-architect-shaking-hands-with-client-in-construction-site-after-confirm-1048992455.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluids">
 				   			<div class="row">
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 
-			<div id="colorlib-project">
+			<!-- <div id="colorlib-project">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4 animate-box colorlib-heading animate-box">
@@ -131,7 +131,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			
 			<!-- <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_img_1.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>

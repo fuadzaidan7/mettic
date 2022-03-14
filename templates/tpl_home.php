@@ -36,7 +36,7 @@
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(images/img_bg_3.jpg);">
+				   	<li style="background-image: url(images/stock-photo-successful-deal-male-architect-shaking-hands-with-client-in-construction-site-after-confirm-1048992455.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluids">
 				   			<div class="row">

@@ -10,7 +10,7 @@
 			<aside id="colorlib-hero">
 				<div class="flexslider">
 					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   	<li style="background-image: url(images/stock-photo-a-construction-worker-control-a-pouring-concrete-pump-on-construction-site-and-sunset-background-752076598.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -23,7 +23,7 @@
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   	<li style="background-image: url(images/stock-photo-panorama-view-at-workers-are-working-on-large-construction-sites-and-many-cranes-are-working-in-the-1549270244.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">

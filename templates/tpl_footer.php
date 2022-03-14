@@ -68,7 +68,7 @@
 									<li><a href="./index.php?module=home"><i class="icon-check"></i> Home</a></li>
 									<li><a href="./index.php?module=about"><i class="icon-check"></i> About</a></li>
 									<li><a href="./index.php?module=products"><i class="icon-check"></i> Products</a></li>
-									<li><a href="./index.php?module=abcontactout"><i class="icon-check"></i> Contact</a></li>
+									<li><a href="./index.php?module=contact"><i class="icon-check"></i> Contact</a></li>
 								</ul>
 							<p></p>
 						</div>

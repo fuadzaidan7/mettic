@@ -126,7 +126,7 @@
 		{/if}
 		
 		{if $product.product_line_1|strip_tags:false|substr:0:1 != "#"}
-		<div id="colorlib-about" class="colorlib-light-grey">
+		<div id="colorlib-about" {if $product.application_1|strip_tags:false|substr:0:1 != "#"}class="colorlib-light-grey"{/if}>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading mb-0">

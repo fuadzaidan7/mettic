@@ -88,7 +88,8 @@
 								<td>{$v.product_name}</td>
 								<td>
 									<a href="./index.php?module=product_crud&product_id={$v.product_id}">Edit</a> | 
-									<a href="./index.php?module=product_crud&product_id={$v.product_id}&action=delete">Delete</a>
+									<a class="delete-product" data-id="{$v.product_id}">Delete</a>
+									<!-- href="./index.php?module=product_crud&product_id={$v.product_id}&action=delete" -->
 								</td>
 							</tr>
 						{/foreach}
@@ -515,6 +516,28 @@
 		/*$('#colorlib-hero li').on('click', function(event ){
 			console.log(event.target.nodeName)
 		})*/
+
+		$(".delete-product").on('click',function(){
+
+			var product_id = $(this).data('id');
+
+			Swal.fire({
+			  title: 'You are deleting this product ',
+			  icon: 'warning',
+			  html:
+			    'Are you sure you want to proceed?',
+  			  confirmButtonColor: '#5cb85c',
+			  showDenyButton: true,			  
+			  confirmButtonText: 'Yes ',
+			  denyButtonText: 'No'
+			}).then((result) => {
+			  /* Read more about isConfirmed, isDenied below */
+			  if (result.isConfirmed) {
+			    // Swal.fire('Saved!', '', 'success')
+			    window.location.href = "./index.php?module=product_crud&product_id="+product_id+"&action=delete";
+			  }
+			})
+		})
 
 	</script>
 </body>

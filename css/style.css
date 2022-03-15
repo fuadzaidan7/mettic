@@ -1607,3 +1607,7 @@ span.required{
         float: left;
     }
 }
+
+.delete-product:hover{
+  cursor: pointer;
+}

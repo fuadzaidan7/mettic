@@ -128,7 +128,7 @@ if($_POST['action'] == "EditProduct")
 				$target_file = $target_dir.$value;
 			}
 			
-			if(file_exists($from_dir))
+			if(file_exists($from_dir) && $value != '')
 			{
 				if (copy($from_dir, $target_file)) {
 				    // echo "The file ". $value. " has been uploaded.<br>";

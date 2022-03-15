@@ -171,7 +171,7 @@ if($_POST['action'] == "EditProduct")
 
 	}
 
-	$query = "UPDATE products SET ".$column_data.", created_by = ".$_SESSION['user_details']['user_id']." WHERE product_id = ".$_POST['product_id'];
+	echo $query = "UPDATE products SET ".$column_data.", created_by = ".$_SESSION['user_details']['user_id']." WHERE product_id = ".$_POST['product_id'];
 
 	// echo $query;
 

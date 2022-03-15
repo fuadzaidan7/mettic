@@ -132,7 +132,7 @@
 
 							<div class="col-md-12" style="border : 1px solid #cecece; padding: 10px; border-radius: 5px; margin-top: 10px">
 								<div class="col-md-6">									
-									<label>Short Description</label><textarea class="form-control" name="short_desc" maxlength="200">{$product.short_desc}</textarea>
+									<label>Short Description</label><textarea class="form-control" name="short_desc" maxlength="200" rows="4">{$product.short_desc}</textarea>
 									<small class="pull-right">This only appears on products page</small>
 								</div>								
 								<div class="col-md-6">									

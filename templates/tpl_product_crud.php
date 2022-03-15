@@ -190,7 +190,10 @@
 								<div class="container">				
 									<div class="row row-pb-lg">
 										<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box mb-0">
-											<span class="sm">Advantages</span>	
+											<div class="others-editor sm" style="text-align: center" id="content_title">
+												{if $product.content_title != ''}{$product.content_title}{else}#Advantages{/if}
+											</div>
+											<span class="sm"></span>	
 											<br>						
 										</div>					
 										<div class="col-md-6">											

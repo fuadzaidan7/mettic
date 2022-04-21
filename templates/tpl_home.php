@@ -247,7 +247,30 @@
 				</div>
 			</div>
 			
-			
+			<div id="colorlib-about">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 text-center colorlib-heading" style="margin-bottom: 1em">
+							<span class="sm" style="letter-spacing: 10px !important">Erection of T-Beam - Sarawak</span>
+						</div>
+						<div class="col-md-10 col-md-offset-1">
+							<!-- <div class="embed-responsive embed-responsive-16by9" style="padding-top: 3px;padding-right: 3px;padding-left: 3px;" >
+							  <iframe class="embed-responsive-item" src="./images/ERECTION OF T-BEAM - SARAWAK.mp4"></iframe>
+							</div>
+ -->						<div class="text-center">
+							 	<video autoplay muted>
+								  <source src="./images/ERECTION OF T-BEAM - SARAWAK.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							 </div>
+							
+						</div>
+						<!-- <div class="col-md-4 animate-box">
+							<p>Mettic Systeme is a company that is committed to delivering excellent engineering solutions</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
 		
 			<div id="colorlib-subscribe">
 				<div class="overlay"></div>

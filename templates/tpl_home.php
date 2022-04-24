@@ -169,7 +169,7 @@
 						<div class="col-md-4 animate-box colorlib-heading animate-box">
 							<span class="sm">What We Do?</span>
 							<h2><span class="thin">We Offer</span> <span class="thick">Services</span></h2>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+							<p class="text-justify">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
 						</div>
 						<div class="col-md-8">
 							<div class="row">

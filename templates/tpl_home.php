@@ -181,7 +181,7 @@
 											</span>
 											<div class="desc">
 												<h3>General Constructing</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 											</div>
 										</div>
 									</div>
@@ -192,7 +192,7 @@
 											</span>
 											<div class="desc">
 												<h3>Building Modeling</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -203,7 +203,7 @@
 											</span>
 											<div class="desc">
 												<h3>Design Build</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -214,7 +214,7 @@
 											</span>
 											<div class="desc">
 												<h3>Construction Services</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -225,7 +225,7 @@
 											</span>
 											<div class="desc">
 												<h3>Pre-Construction Design</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -236,7 +236,7 @@
 											</span>
 											<div class="desc">
 												<h3>Construction Management</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>

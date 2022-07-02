@@ -10,7 +10,7 @@
 			<aside id="colorlib-hero">
 				<div class="flexslider">
 					<ul class="slides">
-				   	<li style="background-image: url(images/stock-photo-construction-workers-fabricating-steel-reinforcement-bar-at-the-construction-site-786092152.jpg);">
+				   	<li style="background-image: url(images/786092152.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -40,7 +40,7 @@
 					</div>
 					<div class="col-md-5 col-md-offset-1 colorlib-heading animate-box">						
 						
-						<img class="img-responsive" src="images/stock-photo-post-tensioning-head-1262474764.jpg" alt="Free HTML5 Bootstrap Template by colorlib.com">
+						<img class="img-responsive" src="images/1262474764.jpg" alt="Free HTML5 Bootstrap Template by colorlib.com">
 					</div>
 				</div>
 				</div>

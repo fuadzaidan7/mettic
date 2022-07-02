@@ -15,7 +15,7 @@
 								</ul>
 							</p>
 						</div>
-						<div class="col-xs-5ths">
+						<div class="col-xs-3">
 							<h4>Malaysia</h4>
 							<ul class="colorlib-footer-links">								
 								<li>Mettic Systeme Sdn Bhd
@@ -30,7 +30,7 @@
 								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
 							</ul>
 						</div>
-						<div class="col-xs-5ths">
+						<!-- <div class="col-xs-5ths">
 							<h4>India</h4>
 							<ul class="colorlib-footer-links">
 								<li>Mettic Systeme India Pvt Ltd
@@ -42,10 +42,9 @@
 									<br>400075, India.
 								<li><a href="tel://601136051024"><i class="icon-phone"></i>&nbsp;&nbsp;+91 96194 03064</a></li>
 								<li><a href="mailto:enquiry@metticsysteme.com" style="font-size: 12px"><i class="icon-envelope"></i>enquiry@metticsysteme.com</a></li>
-								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
 							</ul>
-						</div>
-						<div class="col-xs-5ths">
+						</div> -->
+						<div class="col-xs-3">
 							<h4>Bangladesh</h4>
 							<ul class="colorlib-footer-links">
 								<li>SKF Easy Tech Co. BD
@@ -61,7 +60,7 @@
 								<!-- <li><a href="http://metticsysteme.com"><i class="icon-location4"></i> metticsysteme.com</a></li> -->
 							</ul>
 						</div>
-						<div class="col-xs-5ths">
+						<div class="col-xs-3">
 							<h4>Quick Menu</h4>
 							<p>
 								</p><ul class="colorlib-footer-links">

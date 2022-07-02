@@ -1489,7 +1489,7 @@ input[type="text"] {
 }
 
 body{
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 .pb-0{
@@ -1606,4 +1606,8 @@ span.required{
         width: 20%;
         float: left;
     }
+}
+
+.delete-product:hover{
+  cursor: pointer;
 }

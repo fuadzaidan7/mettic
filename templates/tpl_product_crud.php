@@ -88,7 +88,8 @@
 								<td>{$v.product_name}</td>
 								<td>
 									<a href="./index.php?module=product_crud&product_id={$v.product_id}">Edit</a> | 
-									<a href="./index.php?module=product_crud&product_id={$v.product_id}&action=delete">Delete</a>
+									<a class="delete-product" data-id="{$v.product_id}">Delete</a>
+									<!-- href="./index.php?module=product_crud&product_id={$v.product_id}&action=delete" -->
 								</td>
 							</tr>
 						{/foreach}
@@ -131,7 +132,7 @@
 
 							<div class="col-md-12" style="border : 1px solid #cecece; padding: 10px; border-radius: 5px; margin-top: 10px">
 								<div class="col-md-6">									
-									<label>Short Description</label><textarea class="form-control" name="short_desc" maxlength="200">{$product.short_desc}</textarea>
+									<label>Short Description</label><textarea class="form-control" name="short_desc" maxlength="200" rows="4">{$product.short_desc}</textarea>
 									<small class="pull-right">This only appears on products page</small>
 								</div>								
 								<div class="col-md-6">									
@@ -189,7 +190,10 @@
 								<div class="container">				
 									<div class="row row-pb-lg">
 										<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box mb-0">
-											<span class="sm">Advantages</span>	
+											<div class="others-editor sm" style="text-align: center" id="content_title">
+												{if $product.content_title != ''}{$product.content_title}{else}#Advantages{/if}
+											</div>
+											<span class="sm"></span>	
 											<br>						
 										</div>					
 										<div class="col-md-6">											
@@ -515,6 +519,28 @@
 		/*$('#colorlib-hero li').on('click', function(event ){
 			console.log(event.target.nodeName)
 		})*/
+
+		$(".delete-product").on('click',function(){
+
+			var product_id = $(this).data('id');
+
+			Swal.fire({
+			  title: 'You are deleting this product ',
+			  icon: 'warning',
+			  html:
+			    'Are you sure you want to proceed?',
+  			  confirmButtonColor: '#5cb85c',
+			  showDenyButton: true,			  
+			  confirmButtonText: 'Yes ',
+			  denyButtonText: 'No'
+			}).then((result) => {
+			  /* Read more about isConfirmed, isDenied below */
+			  if (result.isConfirmed) {
+			    // Swal.fire('Saved!', '', 'success')
+			    window.location.href = "./index.php?module=product_crud&product_id="+product_id+"&action=delete";
+			  }
+			})
+		})
 
 	</script>
 </body>

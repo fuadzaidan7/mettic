@@ -31,10 +31,10 @@
 				<div class="container">
 				<div class="row">
 					<div class="col-md-6 colorlib-heading animate-box">						
-						<p>
+						<p class="text-justify">
 							Mettic Systeme provides a wide range of construction materials and construction chemicals. The harmonized product range allows the easy selection as well as ideal combination and processing of individual construction materials.
 						</p>
-						<p>
+						<p class="text-justify">
 							Thanks to versatile fields of application such as commercial and residential buildings, bridges, power plants, marine engineering, railways, the proper function of project site can be ensured in the long run by the use of our product systems
 						</p>
 					</div>
@@ -49,10 +49,13 @@
 			<div id="colorlib-services">
 				<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box" style="margin-bottom: 1em;">
 						<span class="sm">OUR PRODUCTS</span>
 						<h2><span class="thin">Our Proprietary</span> <span class="thick"> Engineering Products</span></h2>
-						<p>Thanks to versatile fields of application such as commercial and residential buildings, bridges, power plants, marine engineering, railways, the proper function of project site can be ensured in the long run by the use of our product systems</p>
+						
+					</div>
+					<div class="col-md-12" style="margin-bottom: 1em;">
+						<p class="text-center">Thanks to versatile fields of application such as commercial and residential buildings, bridges, power plants, marine engineering, railways, the proper function of project site can be ensured in the long run by the use of our product systems</p>
 					</div>
 				</div>
 				<div class="row">

@@ -25,7 +25,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
 		
 		<!-- font awesome -->
-		<link href="./plugin/fontawesome-5.15.4/css/all.css" rel="stylesheet">
+		<link href="./plugin/fontawesome-5.15.4/css/all.css" rel="stylesheet">		
 
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="css/animate.css">
@@ -49,16 +49,23 @@
 
 		<!-- Theme style  -->
 		<link rel="stylesheet" href="css/style.css">
-
-		<!-- Modernizr JS -->
-		<script src="js/modernizr-2.6.2.min.js"></script>
+		
 		<!-- FOR IE9 below -->
 		<!--[if lt IE 9]>
 		<script src="js/respond.min.js"></script>
 		<![endif]-->
 
+		<!-- sweetalert 2 -->
+		<link rel="stylesheet" href="./plugin/sweetalert2/dist/sweetalert2.css">
 	</head>
 
 	{$body}
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<!-- sweetalert 2 -->
+	<script src="./plugin/sweetalert2/dist/sweetalert2.min.js"></script>	
+
 
 	</html>

@@ -33,7 +33,7 @@
 					<div class="col-md-6">
 						<div class="about animate-box">
 							<h2>Committed to delivering excellence</h2>
-							<p>Mettic Systeme is a diversified manufacturer and supplier of premium building products and related technologies for the construction industry. Mettic Systeme carries a lot of recognized brands in the construction industry. 
+							<p class="text-justify">Mettic Systeme is a diversified manufacturer and supplier of premium building products and related technologies for the construction industry. Mettic Systeme carries a lot of recognized brands in the construction industry. 
 							<br><br>
 							We are the professional choices for contractors and we are confident that you’ll find what you are looking for with our wide product ranges. We put great pride into the relationships and partnerships that we form with our clients.</p>
 						</div>

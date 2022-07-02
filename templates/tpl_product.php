@@ -53,7 +53,7 @@
 			<div class="container">				
 				<div class="row row-pb-lg">
 					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading animate-box mb-0">
-						<span class="sm">Advantages</span>	
+						<span class="sm">{if substr(strip_tags($product.content_title),0,1) != "#"}{$product.content_title}{/if}</span>	
 						<br>						
 					</div>					
 					<div class="col-md-6">
@@ -126,7 +126,7 @@
 		{/if}
 		
 		{if $product.product_line_1|strip_tags:false|substr:0:1 != "#"}
-		<div id="colorlib-about" class="colorlib-light-grey">
+		<div id="colorlib-about" {if $product.application_1|strip_tags:false|substr:0:1 != "#"}class="colorlib-light-grey"{/if}>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center animate-box colorlib-heading mb-0">

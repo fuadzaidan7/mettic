@@ -169,7 +169,7 @@
 						<div class="col-md-4 animate-box colorlib-heading animate-box">
 							<span class="sm">What We Do?</span>
 							<h2><span class="thin">We Offer</span> <span class="thick">Services</span></h2>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+							<p class="text-justify">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
 						</div>
 						<div class="col-md-8">
 							<div class="row">
@@ -181,7 +181,7 @@
 											</span>
 											<div class="desc">
 												<h3>General Constructing</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 											</div>
 										</div>
 									</div>
@@ -192,7 +192,7 @@
 											</span>
 											<div class="desc">
 												<h3>Building Modeling</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -203,7 +203,7 @@
 											</span>
 											<div class="desc">
 												<h3>Design Build</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -214,7 +214,7 @@
 											</span>
 											<div class="desc">
 												<h3>Construction Services</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -225,7 +225,7 @@
 											</span>
 											<div class="desc">
 												<h3>Pre-Construction Design</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -236,7 +236,7 @@
 											</span>
 											<div class="desc">
 												<h3>Construction Management</h3>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+												<p class="text-justify">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
 												</div>
 										</div>
 									</div>
@@ -247,7 +247,30 @@
 				</div>
 			</div>
 			
-			
+			<div id="colorlib-about">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 text-center colorlib-heading" style="margin-bottom: 1em">
+							<span class="sm" style="letter-spacing: 10px !important">Erection of T-Beam - Sarawak</span>
+						</div>
+						<div class="col-md-10 col-md-offset-1">
+							<!-- <div class="embed-responsive embed-responsive-16by9" style="padding-top: 3px;padding-right: 3px;padding-left: 3px;" >
+							  <iframe class="embed-responsive-item" src="./images/ERECTION OF T-BEAM - SARAWAK.mp4"></iframe>
+							</div>
+ -->						<div class="text-center">
+							 	<video autoplay muted>
+								  <source src="./images/ERECTION OF T-BEAM - SARAWAK.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							 </div>
+							
+						</div>
+						<!-- <div class="col-md-4 animate-box">
+							<p>Mettic Systeme is a company that is committed to delivering excellent engineering solutions</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
 		
 			<div id="colorlib-subscribe">
 				<div class="overlay"></div>
